@@ -374,6 +374,17 @@
         "responses": {},
         "tags": []
       }
+    },
+    "/thisIs/aQueryTestin/routingEndpoint": {
+      "patch": {
+        "summary": "/thisIs/aQueryTestin/routingEndpoint",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "schemes": [

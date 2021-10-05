@@ -380,6 +380,13 @@
         "responses": {},
         "tags": []
       }
+    },
+    "/thisIs/aQueryTestin/routingEndpoint": {
+      "patch": {
+        "summary": "/thisIs/aQueryTestin/routingEndpoint",
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "tags": [],
