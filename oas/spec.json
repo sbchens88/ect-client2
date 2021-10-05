@@ -363,6 +363,17 @@
         "responses": {},
         "tags": []
       }
+    },
+    "/centerApi/centerRandom": {
+      "put": {
+        "summary": "/centerApi/centerRandom",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "schemes": [

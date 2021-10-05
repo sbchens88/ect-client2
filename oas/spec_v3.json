@@ -373,6 +373,13 @@
         "responses": {},
         "tags": []
       }
+    },
+    "/centerApi/centerRandom": {
+      "put": {
+        "summary": "/centerApi/centerRandom",
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "tags": [],
