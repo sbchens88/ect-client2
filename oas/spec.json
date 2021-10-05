@@ -296,6 +296,17 @@
           }
         ]
       }
+    },
+    "/firstRoute/secondRoute/thirdRoute": {
+      "get": {
+        "summary": "/firstRoute/secondRoute/thirdRoute",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "schemes": [

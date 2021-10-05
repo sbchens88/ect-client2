@@ -313,6 +313,13 @@
           }
         ]
       }
+    },
+    "/firstRoute/secondRoute/thirdRoute": {
+      "get": {
+        "summary": "/firstRoute/secondRoute/thirdRoute",
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "tags": [],
