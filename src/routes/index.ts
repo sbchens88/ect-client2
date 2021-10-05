@@ -4,6 +4,7 @@ import mountAuth from './auth';
 import respond from 'src/middlewares/respond';
 import mountFIRSTROUTE from './firstRoute';
 import mountCHENAPPS from './chenApps';
+import mountCENTERAPI from './centerApi';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -27,4 +28,8 @@ export default function addRoutes(router: Router) {
     const chenApps = Router();
     mountCHENAPPS(chenApps);
     router.use('/chenApps', chenApps);
+
+    const centerApi = Router();
+    mountCENTERAPI(centerApi);
+    router.use('/centerApi', centerApi);
 }
