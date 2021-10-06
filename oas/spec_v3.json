@@ -238,6 +238,13 @@
         "tags": []
       }
     },
+    "/api/aarontest3/testtestsql": {
+      "delete": {
+        "summary": "/api/aarontest3/testtestsql",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/auth": {
       "post": {
         "summary": "/auth",

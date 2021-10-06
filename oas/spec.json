@@ -216,6 +216,17 @@
         ]
       }
     },
+    "/api/aarontest3/testtestsql": {
+      "delete": {
+        "summary": "/api/aarontest3/testtestsql",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/auth": {
       "post": {
         "summary": "/auth",
