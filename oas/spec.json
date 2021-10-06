@@ -356,7 +356,8 @@
                 }
               }
             }
-          }
+          },
+          "304": {}
         },
         "tags": [],
         "produces": [
@@ -395,6 +396,78 @@
         "parameters": [],
         "responses": {},
         "tags": []
+      }
+    },
+    "/coolApi/applicationsManager/getAppByIdTest": {
+      "get": {
+        "summary": "/coolApi/applicationsManager/getAppByIdTest",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "type": "number",
+            "name": "appId",
+            "in": "query",
+            "example": 108
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Bad Data Supplied to API"
+                },
+                "errors": {
+                  "type": "object",
+                  "properties": {
+                    "appId": {
+                      "type": "object",
+                      "properties": {
+                        "msg": {
+                          "type": "string",
+                          "example": "Invalid value"
+                        },
+                        "param": {
+                          "type": "string",
+                          "example": "appId"
+                        },
+                        "location": {
+                          "type": "string",
+                          "example": "body"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Unknown Error"
+                },
+                "data": {
+                  "type": "null",
+                  "example": null
+                }
+              }
+            }
+          }
+        },
+        "tags": [],
+        "produces": [
+          "application/json"
+        ]
       }
     }
   },

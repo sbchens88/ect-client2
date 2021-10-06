@@ -369,6 +369,9 @@
                 }
               }
             }
+          },
+          "304": {
+            "description": ""
           }
         },
         "tags": []
@@ -392,6 +395,82 @@
       "patch": {
         "summary": "/thisIs/aQueryTestin/routingEndpoint",
         "responses": {},
+        "tags": []
+      }
+    },
+    "/coolApi/applicationsManager/getAppByIdTest": {
+      "get": {
+        "summary": "/coolApi/applicationsManager/getAppByIdTest",
+        "parameters": [
+          {
+            "name": "appId",
+            "in": "query",
+            "example": 108,
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Bad Data Supplied to API"
+                    },
+                    "errors": {
+                      "type": "object",
+                      "properties": {
+                        "appId": {
+                          "type": "object",
+                          "properties": {
+                            "msg": {
+                              "type": "string",
+                              "example": "Invalid value"
+                            },
+                            "param": {
+                              "type": "string",
+                              "example": "appId"
+                            },
+                            "location": {
+                              "type": "string",
+                              "example": "body"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Unknown Error"
+                    },
+                    "data": {
+                      "example": null,
+                      "nullable": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "tags": []
       }
     }

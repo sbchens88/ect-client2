@@ -7,6 +7,7 @@ import mountCHENAPPS from './chenApps';
 import mountCENTERAPI from './centerApi';
 import mountTHISIS from './thisIs';
 import mountCOOLAPI from './coolApi';
+import mountCOOLESTAPI from './coolestApi';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -42,4 +43,8 @@ export default function addRoutes(router: Router) {
     const coolApi = Router();
     mountCOOLAPI(coolApi);
     router.use('/coolApi', coolApi);
+
+    const coolestApi = Router();
+    mountCOOLESTAPI(coolestApi);
+    router.use('/coolestApi', coolestApi);
 }
