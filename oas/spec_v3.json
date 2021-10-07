@@ -473,6 +473,13 @@
         },
         "tags": []
       }
+    },
+    "/coolestApi/applicationsMgr/deleteAppByIdtestin": {
+      "delete": {
+        "summary": "/coolestApi/applicationsMgr/deleteAppByIdtestin",
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "tags": [],

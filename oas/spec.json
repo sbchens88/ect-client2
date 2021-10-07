@@ -469,6 +469,17 @@
           "application/json"
         ]
       }
+    },
+    "/coolestApi/applicationsMgr/deleteAppByIdtestin": {
+      "delete": {
+        "summary": "/coolestApi/applicationsMgr/deleteAppByIdtestin",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "schemes": [

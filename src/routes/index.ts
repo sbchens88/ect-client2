@@ -8,6 +8,7 @@ import mountCENTERAPI from './centerApi';
 import mountTHISIS from './thisIs';
 import mountCOOLAPI from './coolApi';
 import mountCOOLESTAPI from './coolestApi';
+import mountTESTINGAPING from './testingAping';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -47,4 +48,8 @@ export default function addRoutes(router: Router) {
     const coolestApi = Router();
     mountCOOLESTAPI(coolestApi);
     router.use('/coolestApi', coolestApi);
+
+    const testingAping = Router();
+    mountTESTINGAPING(testingAping);
+    router.use('/testingAping', testingAping);
 }
