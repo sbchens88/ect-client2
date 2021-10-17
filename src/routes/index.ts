@@ -11,6 +11,7 @@ import mountCOOLESTAPI from './coolestApi';
 import mountTESTINGAPING from './testingAping';
 import mountCHENTESTING from './chenTesting';
 import mountLETSAPI from './letsApi';
+import mountCHENSS from './chenss';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -62,4 +63,8 @@ export default function addRoutes(router: Router) {
     const letsApi = Router();
     mountLETSAPI(letsApi);
     router.use('/letsApi', letsApi);
+
+    const chenss = Router();
+    mountCHENSS(chenss);
+    router.use('/chenss', chenss);
 }

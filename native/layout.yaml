@@ -1,0 +1,38 @@
+---
+name: layout
+codeblocks:
+  typescript:
+    - const eradaniConnect = require('../..');
+    - const { dataTypes } = eradaniConnect;
+    - const config = require('../config');
+datastructures:
+  LAYOUTRECDS:
+    subfields:
+      FIRSTNAME:
+        type: Character
+        length: 6
+      LASTNAME:
+        type: Character
+        length: 5
+      RESPONSE:
+        type: Character
+        length: 11
+        outputOnly: true
+      COMMENTS:
+        type: Character
+        length: 10
+        dim: 10
+        outputOnly: true
+      DATEREC:
+        type: Packed
+        length: 8
+pgmmodels:
+  poccblpgm:
+    library: ECSOMF
+    mode: ile
+    procedures:
+      MainProc:
+        params:
+          LAYOUTREC:
+            type: DataStruct
+            dsName: LAYOUTRECDS

@@ -1,0 +1,22 @@
+      ************************************
+      * Module: layout
+      * Generated RPG data structures
+      * and prototypes
+      * Do not modify
+      ************************************
+
+      ************************************
+      * LAYOUTRECDS data structure
+      ************************************
+     DLAYOUTRECDS      DS
+     DFIRSTNAME                       6A
+     DLASTNAME                        5A
+     DRESPONSE                       11A
+     DCOMMENTS                       10A   Dim(10)
+     DDATEREC                         8P 0
+
+      ************************************
+      * Program prototype
+      ************************************
+     Dpoccblpgm        PR
+     DLAYOUTREC                            LikeDS(LAYOUTRECDS)
