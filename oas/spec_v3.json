@@ -694,6 +694,13 @@
         "responses": {},
         "tags": []
       }
+    },
+    "/chenAsq/asqController/getDataEndpointaa": {
+      "get": {
+        "summary": "/chenAsq/asqController/getDataEndpointaa",
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "tags": [],
