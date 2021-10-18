@@ -9,4 +9,9 @@ export default function mountTOASTCONTRL(router: Router) {
         validate(validators.TestingToasting),
         respond((req: any) => toastContrlController.TestingToasting(Object.assign({}, req.params, req.body, req.query)))
     );
+    router.get(
+        '/testingToasting1',
+        validate(validators.Asdsadasd),
+        respond((req: any) => toastContrlController.Asdsadasd(Object.assign({}, req.params, req.body, req.query)))
+    );
 }

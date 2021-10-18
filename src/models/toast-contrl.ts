@@ -5,3 +5,8 @@ export const TestingToastingMain = new eradaniConnect.run.Sql(` select * from qg
 export interface TestingToastingInput {}
 export type TestingToastingOutputRecord = JSONObject;
 export interface TestingToastingOutput extends Array<TestingToastingOutputRecord> {}
+
+export const AsdsadasdMain = new eradaniConnect.run.Sql(`select * from qgpl.applications`);
+export interface AsdsadasdInput {}
+export type AsdsadasdOutputRecord = JSONObject;
+export interface AsdsadasdOutput extends Array<AsdsadasdOutputRecord> {}
