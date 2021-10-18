@@ -747,6 +747,17 @@
           "application/json"
         ]
       }
+    },
+    "/toastApi/toastContrl/testingToasting1": {
+      "get": {
+        "summary": "/toastApi/toastContrl/testingToasting1",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "schemes": [

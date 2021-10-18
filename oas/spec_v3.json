@@ -736,6 +736,13 @@
         },
         "tags": []
       }
+    },
+    "/toastApi/toastContrl/testingToasting1": {
+      "get": {
+        "summary": "/toastApi/toastContrl/testingToasting1",
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "tags": [],
