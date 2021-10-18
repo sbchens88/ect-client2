@@ -750,6 +750,13 @@
         "tags": []
       }
     },
+    "/yetAnother/apiTestRouting/getSomeRDAt": {
+      "get": {
+        "summary": "/yetAnother/apiTestRouting/getSomeRDAt",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",

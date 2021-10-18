@@ -762,6 +762,17 @@
         "tags": []
       }
     },
+    "/yetAnother/apiTestRouting/getSomeRDAt": {
+      "get": {
+        "summary": "/yetAnother/apiTestRouting/getSomeRDAt",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",
