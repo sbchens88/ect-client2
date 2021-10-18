@@ -701,6 +701,13 @@
         "responses": {},
         "tags": []
       }
+    },
+    "/chensAPi/chensContrl/chensEpoint": {
+      "get": {
+        "summary": "/chensAPi/chensContrl/chensEpoint",
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "tags": [],

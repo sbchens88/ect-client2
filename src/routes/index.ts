@@ -13,6 +13,7 @@ import mountCHENTESTING from './chenTesting';
 import mountLETSAPI from './letsApi';
 import mountCHENASQ from './chenAsq';
 import mountCHENSAPI from './chensAPi';
+import mountTOASTAPI from './toastApi';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -72,4 +73,8 @@ export default function addRoutes(router: Router) {
     const chensAPi = Router();
     mountCHENSAPI(chensAPi);
     router.use('/chensAPi', chensAPi);
+
+    const toastApi = Router();
+    mountTOASTAPI(toastApi);
+    router.use('/toastApi', toastApi);
 }
