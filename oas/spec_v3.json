@@ -709,6 +709,23 @@
         "tags": []
       }
     },
+    "/justTesting/theApiCon/getSomeThings/{num}": {
+      "get": {
+        "summary": "/justTesting/theApiCon/getSomeThings/{num}",
+        "parameters": [
+          {
+            "name": "num",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",

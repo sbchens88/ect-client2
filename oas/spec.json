@@ -717,6 +717,23 @@
         "tags": []
       }
     },
+    "/justTesting/theApiCon/getSomeThings/{num}": {
+      "get": {
+        "summary": "/justTesting/theApiCon/getSomeThings/{num}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "num",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",
