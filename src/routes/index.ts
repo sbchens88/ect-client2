@@ -15,6 +15,7 @@ import mountCHENASQ from './chenAsq';
 import mountCHENSAPI from './chensAPi';
 import mountJUSTTESTING from './justTesting';
 import mountCHENAP from './chenAp';
+import mountCHEAPI from './cheApi';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -82,4 +83,8 @@ export default function addRoutes(router: Router) {
     const chenAp = Router();
     mountCHENAP(chenAp);
     router.use('/chenAp', chenAp);
+
+    const cheApi = Router();
+    mountCHEAPI(cheApi);
+    router.use('/cheApi', cheApi);
 }

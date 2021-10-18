@@ -726,6 +726,23 @@
         "tags": []
       }
     },
+    "/chenAp/iTestingA/ndLoad/{appId}": {
+      "get": {
+        "summary": "/chenAp/iTestingA/ndLoad/{appId}",
+        "parameters": [
+          {
+            "name": "appId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",
