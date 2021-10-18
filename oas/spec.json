@@ -751,6 +751,17 @@
         "tags": []
       }
     },
+    "/cheApi/theContl/getSompp": {
+      "get": {
+        "summary": "/cheApi/theContl/getSompp",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",

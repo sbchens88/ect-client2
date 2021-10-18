@@ -743,6 +743,13 @@
         "tags": []
       }
     },
+    "/cheApi/theContl/getSompp": {
+      "get": {
+        "summary": "/cheApi/theContl/getSompp",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",
