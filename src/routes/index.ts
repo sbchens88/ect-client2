@@ -21,6 +21,7 @@ import mountLOADERCHECK from './loaderCheck';
 import mountAPITES from './apiTes';
 import mountTESTINGTO from './testingTo';
 import mountASD from './asd';
+import mountASDASDAS from './asdasdas';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -112,4 +113,8 @@ export default function addRoutes(router: Router) {
     const asd = Router();
     mountASD(asd);
     router.use('/asd', asd);
+
+    const asdasdas = Router();
+    mountASDASDAS(asdasdas);
+    router.use('/asdasdas', asdasdas);
 }

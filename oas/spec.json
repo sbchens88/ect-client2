@@ -795,6 +795,28 @@
         "tags": []
       }
     },
+    "/testingTo/astContrlr/someDataEndpointsss": {
+      "get": {
+        "summary": "/testingTo/astContrlr/someDataEndpointsss",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/asd/asdasdasd/asdasd": {
+      "get": {
+        "summary": "/asd/asdasdasd/asdasd",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",

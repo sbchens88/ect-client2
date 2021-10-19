@@ -771,6 +771,20 @@
         "tags": []
       }
     },
+    "/testingTo/astContrlr/someDataEndpointsss": {
+      "get": {
+        "summary": "/testingTo/astContrlr/someDataEndpointsss",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/asd/asdasdasd/asdasd": {
+      "get": {
+        "summary": "/asd/asdasdasd/asdasd",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",
