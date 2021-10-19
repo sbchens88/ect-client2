@@ -757,6 +757,13 @@
         "tags": []
       }
     },
+    "/loaderCheck/letsSeeid/workigloadaer": {
+      "get": {
+        "summary": "/loaderCheck/letsSeeid/workigloadaer",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",

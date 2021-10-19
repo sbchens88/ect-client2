@@ -773,6 +773,17 @@
         "tags": []
       }
     },
+    "/loaderCheck/letsSeeid/workigloadaer": {
+      "get": {
+        "summary": "/loaderCheck/letsSeeid/workigloadaer",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",
