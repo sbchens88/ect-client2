@@ -784,6 +784,17 @@
         "tags": []
       }
     },
+    "/apiTes/tingControl/lerEndpoint1": {
+      "get": {
+        "summary": "/apiTes/tingControl/lerEndpoint1",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",

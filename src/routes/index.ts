@@ -19,6 +19,8 @@ import mountCHEAPI from './cheApi';
 import mountYETANOTHER from './yetAnother';
 import mountLOADERCHECK from './loaderCheck';
 import mountAPITES from './apiTes';
+import mountTESTINGTO from './testingTo';
+import mountASD from './asd';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -102,4 +104,12 @@ export default function addRoutes(router: Router) {
     const apiTes = Router();
     mountAPITES(apiTes);
     router.use('/apiTes', apiTes);
+
+    const testingTo = Router();
+    mountTESTINGTO(testingTo);
+    router.use('/testingTo', testingTo);
+
+    const asd = Router();
+    mountASD(asd);
+    router.use('/asd', asd);
 }
