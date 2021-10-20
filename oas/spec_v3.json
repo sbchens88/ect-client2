@@ -785,6 +785,13 @@
         "tags": []
       }
     },
+    "/asdasdas/dasdasd/asdasasd": {
+      "get": {
+        "summary": "/asdasdas/dasdasd/asdasasd",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",
