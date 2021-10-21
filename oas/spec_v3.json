@@ -764,6 +764,62 @@
         "tags": []
       }
     },
+    "/apiTes/tingControl/lerEndpoint1": {
+      "get": {
+        "summary": "/apiTes/tingControl/lerEndpoint1",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/testingTo/astContrlr/someDataEndpointsss": {
+      "get": {
+        "summary": "/testingTo/astContrlr/someDataEndpointsss",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/asd/asdasdasd/asdasd": {
+      "get": {
+        "summary": "/asd/asdasdasd/asdasd",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/asdasdas/dasdasd/asdasasd": {
+      "get": {
+        "summary": "/asdasdas/dasdasd/asdasasd",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/ranApi/randControlerC/testingDeleteFunction": {
+      "delete": {
+        "summary": "/ranApi/randControlerC/testingDeleteFunction",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/teston/delteMethodFun/gettingSomeApDIngo": {
+      "delete": {
+        "summary": "/teston/delteMethodFun/gettingSomeApDIngo",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/teston/delteMethodFun/gettingSomeApDIngoqwe": {
+      "delete": {
+        "summary": "/teston/delteMethodFun/gettingSomeApDIngoqwe",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/teston/delteMethodFun/gettingSomeApDIngoqwe1": {
+      "delete": {
+        "summary": "/teston/delteMethodFun/gettingSomeApDIngoqwe1",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",

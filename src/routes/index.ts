@@ -18,6 +18,7 @@ import mountCHENAP from './chenAp';
 import mountCHEAPI from './cheApi';
 import mountYETANOTHER from './yetAnother';
 import mountLOADERCHECK from './loaderCheck';
+import mountASDFD from './asdfd';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -97,4 +98,8 @@ export default function addRoutes(router: Router) {
     const loaderCheck = Router();
     mountLOADERCHECK(loaderCheck);
     router.use('/loaderCheck', loaderCheck);
+
+    const asdfd = Router();
+    mountASDFD(asdfd);
+    router.use('/asdfd', asdfd);
 }

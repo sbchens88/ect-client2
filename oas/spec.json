@@ -784,6 +784,94 @@
         "tags": []
       }
     },
+    "/apiTes/tingControl/lerEndpoint1": {
+      "get": {
+        "summary": "/apiTes/tingControl/lerEndpoint1",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/testingTo/astContrlr/someDataEndpointsss": {
+      "get": {
+        "summary": "/testingTo/astContrlr/someDataEndpointsss",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/asd/asdasdasd/asdasd": {
+      "get": {
+        "summary": "/asd/asdasdasd/asdasd",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/asdasdas/dasdasd/asdasasd": {
+      "get": {
+        "summary": "/asdasdas/dasdasd/asdasasd",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/ranApi/randControlerC/testingDeleteFunction": {
+      "delete": {
+        "summary": "/ranApi/randControlerC/testingDeleteFunction",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/teston/delteMethodFun/gettingSomeApDIngo": {
+      "delete": {
+        "summary": "/teston/delteMethodFun/gettingSomeApDIngo",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/teston/delteMethodFun/gettingSomeApDIngoqwe": {
+      "delete": {
+        "summary": "/teston/delteMethodFun/gettingSomeApDIngoqwe",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/teston/delteMethodFun/gettingSomeApDIngoqwe1": {
+      "delete": {
+        "summary": "/teston/delteMethodFun/gettingSomeApDIngoqwe1",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",
