@@ -11,4 +11,18 @@ export default function mountDELTEMETHODFUN(router: Router) {
             delteMethodFunController.GettingSomeApDIngo(Object.assign({}, req.params, req.body, req.query))
         )
     );
+    router.delete(
+        '/gettingSomeApDIngoqwe',
+        validate(validators.GettingSomeApDIngo),
+        respond((req: any) =>
+            delteMethodFunController.GettingSomeApDIngo(Object.assign({}, req.params, req.body, req.query))
+        )
+    );
+    router.delete(
+        '/gettingSomeApDIngoqwe1',
+        validate(validators.GettingSomeApDIngoff),
+        respond((req: any) =>
+            delteMethodFunController.GettingSomeApDIngoff(Object.assign({}, req.params, req.body, req.query))
+        )
+    );
 }
