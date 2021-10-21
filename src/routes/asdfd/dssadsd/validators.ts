@@ -4,6 +4,8 @@ export const Ojihugyvh: InputCheckChain[] = []
 export const Ojihugyvh: InputCheckChain[] = []
 export const Ojihugyvh: InputCheckChain[] = []
 export const Ojihugyvh: InputCheckChain[] = []
+export const Ojihugyvh: InputCheckChain[] = []
+
 
 
 
