@@ -19,6 +19,7 @@ import mountCHEAPI from './cheApi';
 import mountYETANOTHER from './yetAnother';
 import mountLOADERCHECK from './loaderCheck';
 import mountASDFD from './asdfd';
+import mountASDASD from './asdasd';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -102,4 +103,8 @@ export default function addRoutes(router: Router) {
     const asdfd = Router();
     mountASDFD(asdfd);
     router.use('/asdfd', asdfd);
+
+    const asdasd = Router();
+    mountASDASD(asdasd);
+    router.use('/asdasd', asdasd);
 }

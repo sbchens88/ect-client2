@@ -764,6 +764,13 @@
         "tags": []
       }
     },
+    "/asdfd/dssadsd/sdssd1": {
+      "get": {
+        "summary": "/asdfd/dssadsd/sdssd1",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/apiTes/tingControl/lerEndpoint1": {
       "get": {
         "summary": "/apiTes/tingControl/lerEndpoint1",
