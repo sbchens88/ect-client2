@@ -828,6 +828,17 @@
         "tags": []
       }
     },
+    "/ranApi/randControlerC/testingDeleteFunction": {
+      "delete": {
+        "summary": "/ranApi/randControlerC/testingDeleteFunction",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",

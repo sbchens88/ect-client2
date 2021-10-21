@@ -792,6 +792,13 @@
         "tags": []
       }
     },
+    "/ranApi/randControlerC/testingDeleteFunction": {
+      "delete": {
+        "summary": "/ranApi/randControlerC/testingDeleteFunction",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/toastApi/toastContrl/testingToasting": {
       "get": {
         "summary": "/toastApi/toastContrl/testingToasting",

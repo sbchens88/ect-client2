@@ -23,6 +23,7 @@ import mountTESTINGTO from './testingTo';
 import mountASD from './asd';
 import mountASDASDAS from './asdasdas';
 import mountRANAPI from './ranApi';
+import mountTESTON from './teston';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -122,4 +123,8 @@ export default function addRoutes(router: Router) {
     const ranApi = Router();
     mountRANAPI(ranApi);
     router.use('/ranApi', ranApi);
+
+    const teston = Router();
+    mountTESTON(teston);
+    router.use('/teston', teston);
 }
