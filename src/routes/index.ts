@@ -24,6 +24,7 @@ import mountASD from './asd';
 import mountASDASDAS from './asdasdas';
 import mountRANAPI from './ranApi';
 import mountTESTON from './teston';
+import mountCHIAPI from './chiApi';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -127,4 +128,8 @@ export default function addRoutes(router: Router) {
     const teston = Router();
     mountTESTON(teston);
     router.use('/teston', teston);
+
+    const chiApi = Router();
+    mountCHIAPI(chiApi);
+    router.use('/chiApi', chiApi);
 }
