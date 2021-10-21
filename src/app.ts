@@ -1,4 +1,8 @@
+(BigInt.prototype as any).toJSON = function () {
+    return this.toString();
+};
 import http from 'http';
+
 import express from 'express';
 import configService from 'config';
 import createLogger, { requestLogger } from 'src/services/logger';
