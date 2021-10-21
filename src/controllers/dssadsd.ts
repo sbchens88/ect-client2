@@ -28,3 +28,9 @@ export async function Ojihugyvh(inputs: JSONObject): Promise<OjihugyvhOutput> {
     const params: OjihugyvhInput = {};
     return transport.execute(OjihugyvhMain, params) as Promise<OjihugyvhOutput>;
 }
+
+export async function Ojihugyvh(inputs: JSONObject): Promise<OjihugyvhOutput> {
+    logger.debug('Calling ojihugyvh with args: ', inputs);
+    const params: OjihugyvhInput = {};
+    return transport.execute(OjihugyvhMain, params) as Promise<OjihugyvhOutput>;
+}
