@@ -20,6 +20,7 @@ import mountYETANOTHER from './yetAnother';
 import mountLOADERCHECK from './loaderCheck';
 import mountASDFD from './asdfd';
 import mountASDASD from './asdasd';
+import mountASDASDASDAS from './asdasdasdas';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -107,4 +108,8 @@ export default function addRoutes(router: Router) {
     const asdasd = Router();
     mountASDASD(asdasd);
     router.use('/asdasd', asdasd);
+
+    const asdasdasdas = Router();
+    mountASDASDASDAS(asdasdasdas);
+    router.use('/asdasdasdas', asdasdasdas);
 }
