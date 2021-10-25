@@ -9,4 +9,9 @@ export default function mountLKJHGFDS(router: Router) {
         validate(validators.PkmnhytFunc),
         respond((req: any) => lkjhgfdsController.PkmnhytFunc(Object.assign({}, req.params, req.body, req.query)))
     );
+    router.get(
+        '/pkmnhyt123',
+        validate(validators.PkmnhytFuncsss),
+        respond((req: any) => lkjhgfdsController.PkmnhytFuncsss(Object.assign({}, req.params, req.body, req.query)))
+    );
 }
