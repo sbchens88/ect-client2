@@ -22,6 +22,7 @@ import mountASDFD from './asdfd';
 import mountASDASD from './asdasd';
 import mountASDASDASDAS from './asdasdasdas';
 import mountASDSAD from './asdsad';
+import mountSDFGHJKL from './sdfghjkl';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -117,4 +118,8 @@ export default function addRoutes(router: Router) {
     const asdsad = Router();
     mountASDSAD(asdsad);
     router.use('/asdsad', asdsad);
+
+    const sdfghjkl = Router();
+    mountSDFGHJKL(sdfghjkl);
+    router.use('/sdfghjkl', sdfghjkl);
 }
