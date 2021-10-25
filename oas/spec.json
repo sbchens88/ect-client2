@@ -878,6 +878,37 @@
         ]
       }
     },
+    "/asdsad/asdasdawqe/qweqwe2": {
+      "get": {
+        "summary": "/asdsad/asdasdawqe/qweqwe2",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Unknown Error"
+                },
+                "data": {
+                  "type": "null",
+                  "example": null
+                }
+              }
+            }
+          }
+        },
+        "tags": [],
+        "produces": [
+          "application/json"
+        ]
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",
