@@ -24,6 +24,7 @@ import mountASDASDASDAS from './asdasdasdas';
 import mountASDSAD from './asdsad';
 import mountSDFGHJKL from './sdfghjkl';
 import mountCHEN from './chen';
+import mountAAPI from './aapi';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -127,4 +128,8 @@ export default function addRoutes(router: Router) {
     const chen = Router();
     mountCHEN(chen);
     router.use('/chen', chen);
+
+    const aapi = Router();
+    mountAAPI(aapi);
+    router.use('/aapi', aapi);
 }

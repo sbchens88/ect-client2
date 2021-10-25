@@ -976,6 +976,17 @@
         ]
       }
     },
+    "/chen/testingA/getSData": {
+      "get": {
+        "summary": "/chen/testingA/getSData",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",

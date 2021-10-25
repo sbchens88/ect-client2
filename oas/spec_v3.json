@@ -942,6 +942,13 @@
         "tags": []
       }
     },
+    "/chen/testingA/getSData": {
+      "get": {
+        "summary": "/chen/testingA/getSData",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",
