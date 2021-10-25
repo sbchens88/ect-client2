@@ -771,6 +771,13 @@
         "tags": []
       }
     },
+    "/asdasd/asdaw/ewfsdvcc": {
+      "get": {
+        "summary": "/asdasd/asdaw/ewfsdvcc",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/apiTes/tingControl/lerEndpoint1": {
       "get": {
         "summary": "/apiTes/tingControl/lerEndpoint1",
