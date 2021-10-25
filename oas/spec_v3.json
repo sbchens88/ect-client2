@@ -854,6 +854,34 @@
         "tags": []
       }
     },
+    "/asdsad/asdasdawqe/qweqwe2": {
+      "get": {
+        "summary": "/asdsad/asdasdawqe/qweqwe2",
+        "responses": {
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Unknown Error"
+                    },
+                    "data": {
+                      "example": null,
+                      "nullable": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",
