@@ -5,4 +5,10 @@ export const Qweruidfofjasd: InputCheckChain[] = [
                 
                     check('first').isNumeric()
                 ]
+export const Qweruidfofjasd: InputCheckChain[] = [
+                    
+                
+                    check('first').isNumeric()
+                ]
+
 

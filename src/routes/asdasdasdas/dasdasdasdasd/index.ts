@@ -11,4 +11,11 @@ export default function mountDASDASDASDASD(router: Router) {
             dasdasdasdasdController.Qweruidfofjasd(Object.assign({}, req.params, req.body, req.query))
         )
     );
+    router.get(
+        '/asdasasdasd2',
+        validate(validators.Qweruidfofjasd),
+        respond((req: any) =>
+            dasdasdasdasdController.Qweruidfofjasd(Object.assign({}, req.params, req.body, req.query))
+        )
+    );
 }
