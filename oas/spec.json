@@ -806,6 +806,78 @@
         "tags": []
       }
     },
+    "/asdasdasdas/dasdasdasdasd/asdasasdasd1": {
+      "get": {
+        "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd1",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "first",
+            "in": "query",
+            "example": "123"
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Bad Data Supplied to API"
+                },
+                "errors": {
+                  "type": "object",
+                  "properties": {
+                    "first": {
+                      "type": "object",
+                      "properties": {
+                        "msg": {
+                          "type": "string",
+                          "example": "Invalid value"
+                        },
+                        "param": {
+                          "type": "string",
+                          "example": "first"
+                        },
+                        "location": {
+                          "type": "string",
+                          "example": "body"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Unknown Error"
+                },
+                "data": {
+                  "type": "null",
+                  "example": null
+                }
+              }
+            }
+          }
+        },
+        "tags": [],
+        "produces": [
+          "application/json"
+        ]
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",

@@ -778,6 +778,82 @@
         "tags": []
       }
     },
+    "/asdasdasdas/dasdasdasdasd/asdasasdasd1": {
+      "get": {
+        "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd1",
+        "parameters": [
+          {
+            "name": "first",
+            "in": "query",
+            "example": "123",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Bad Data Supplied to API"
+                    },
+                    "errors": {
+                      "type": "object",
+                      "properties": {
+                        "first": {
+                          "type": "object",
+                          "properties": {
+                            "msg": {
+                              "type": "string",
+                              "example": "Invalid value"
+                            },
+                            "param": {
+                              "type": "string",
+                              "example": "first"
+                            },
+                            "location": {
+                              "type": "string",
+                              "example": "body"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Unknown Error"
+                    },
+                    "data": {
+                      "example": null,
+                      "nullable": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",
