@@ -909,6 +909,17 @@
         ]
       }
     },
+    "/asdsad/asdasdertygfawqe/qweqwe22": {
+      "get": {
+        "summary": "/asdsad/asdasdertygfawqe/qweqwe22",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",

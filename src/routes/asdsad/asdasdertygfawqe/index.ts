@@ -11,4 +11,11 @@ export default function mountASDASDERTYGFAWQE(router: Router) {
             asdasdertygfawqeController.Qweffssddwerhgf(Object.assign({}, req.params, req.body, req.query))
         )
     );
+    router.get(
+        '/qweqwe223',
+        validate(validators.Qweffssddwerhgf),
+        respond((req: any) =>
+            asdasdertygfawqeController.Qweffssddwerhgf(Object.assign({}, req.params, req.body, req.query))
+        )
+    );
 }

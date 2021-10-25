@@ -882,6 +882,13 @@
         "tags": []
       }
     },
+    "/asdsad/asdasdertygfawqe/qweqwe22": {
+      "get": {
+        "summary": "/asdsad/asdasdertygfawqe/qweqwe22",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",

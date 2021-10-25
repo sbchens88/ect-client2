@@ -10,3 +10,9 @@ export async function Qweffssddwerhgf(inputs: JSONObject): Promise<Qweffssddwerh
     const params: QweffssddwerhgfInput = {};
     return transport.execute(QweffssddwerhgfMain, params) as Promise<QweffssddwerhgfOutput>;
 }
+
+export async function Qweffssddwerhgf(inputs: JSONObject): Promise<QweffssddwerhgfOutput> {
+    logger.debug('Calling qweffssddwerhgf with args: ', inputs);
+    const params: QweffssddwerhgfInput = {};
+    return transport.execute(QweffssddwerhgfMain, params) as Promise<QweffssddwerhgfOutput>;
+}
