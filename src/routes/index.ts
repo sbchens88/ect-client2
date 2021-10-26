@@ -27,6 +27,7 @@ import mountCHEN from './chen';
 import mountAAPI from './aapi';
 import mountPM2REST from './pm2Rest';
 import mountBADBAD from './badbad';
+import mountTEST1 from './test1';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -142,4 +143,8 @@ export default function addRoutes(router: Router) {
     const badbad = Router();
     mountBADBAD(badbad);
     router.use('/badbad', badbad);
+
+    const test1 = Router();
+    mountTEST1(test1);
+    router.use('/test1', test1);
 }

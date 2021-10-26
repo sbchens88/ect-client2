@@ -1016,6 +1016,77 @@
           "application/json"
         ],
         "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "ID": {
+                    "type": "number"
+                  },
+                  "NAME": {
+                    "type": "string"
+                  },
+                  "DESCRIPTION": {
+                    "type": "string"
+                  },
+                  "APPLICATION_PATH": {
+                    "type": "string"
+                  },
+                  "APPLICATION_STATUS": {
+                    "type": "string"
+                  },
+                  "PORT": {
+                    "type": "number"
+                  },
+                  "LIBRARY": {
+                    "type": "string"
+                  },
+                  "SOURCE": {
+                    "type": "string"
+                  },
+                  "LOGS": {
+                    "type": "string"
+                  },
+                  "GIT_REPOSITORY": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "ID",
+                  "NAME",
+                  "DESCRIPTION",
+                  "APPLICATION_PATH",
+                  "APPLICATION_STATUS",
+                  "PORT",
+                  "LIBRARY",
+                  "SOURCE",
+                  "LOGS",
+                  "GIT_REPOSITORY"
+                ]
+              }
+            }
+          }
+        },
+        "tags": [],
+        "produces": [
+          "application/json"
+        ]
+      }
+    },
+    "/test1/apiasdasd/eradanisdasd": {
+      "get": {
+        "summary": "/test1/apiasdasd/eradanisdasd",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
         "responses": {},
         "tags": []
       }
