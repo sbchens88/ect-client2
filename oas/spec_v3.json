@@ -963,6 +963,13 @@
         "tags": []
       }
     },
+    "/badbad/apiRoute/ohNo": {
+      "get": {
+        "summary": "/badbad/apiRoute/ohNo",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",

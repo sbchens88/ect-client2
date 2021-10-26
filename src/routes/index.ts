@@ -26,6 +26,7 @@ import mountSDFGHJKL from './sdfghjkl';
 import mountCHEN from './chen';
 import mountAAPI from './aapi';
 import mountPM2REST from './pm2Rest';
+import mountBADBAD from './badbad';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -137,4 +138,8 @@ export default function addRoutes(router: Router) {
     const pm2Rest = Router();
     mountPM2REST(pm2Rest);
     router.use('/pm2Rest', pm2Rest);
+
+    const badbad = Router();
+    mountBADBAD(badbad);
+    router.use('/badbad', badbad);
 }

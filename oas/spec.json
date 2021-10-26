@@ -1009,6 +1009,17 @@
         "tags": []
       }
     },
+    "/badbad/apiRoute/ohNo": {
+      "get": {
+        "summary": "/badbad/apiRoute/ohNo",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",
