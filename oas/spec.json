@@ -987,6 +987,28 @@
         "tags": []
       }
     },
+    "/aapi/acontrollera/aendpoindaa": {
+      "get": {
+        "summary": "/aapi/acontrollera/aendpoindaa",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/pm2Rest/artTesting/apiGenratorCall": {
+      "get": {
+        "summary": "/pm2Rest/artTesting/apiGenratorCall",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",

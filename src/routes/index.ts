@@ -25,6 +25,7 @@ import mountASDSAD from './asdsad';
 import mountSDFGHJKL from './sdfghjkl';
 import mountCHEN from './chen';
 import mountAAPI from './aapi';
+import mountPM2REST from './pm2Rest';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -132,4 +133,8 @@ export default function addRoutes(router: Router) {
     const aapi = Router();
     mountAAPI(aapi);
     router.use('/aapi', aapi);
+
+    const pm2Rest = Router();
+    mountPM2REST(pm2Rest);
+    router.use('/pm2Rest', pm2Rest);
 }

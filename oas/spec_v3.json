@@ -949,6 +949,20 @@
         "tags": []
       }
     },
+    "/aapi/acontrollera/aendpoindaa": {
+      "get": {
+        "summary": "/aapi/acontrollera/aendpoindaa",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/pm2Rest/artTesting/apiGenratorCall": {
+      "get": {
+        "summary": "/pm2Rest/artTesting/apiGenratorCall",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",
