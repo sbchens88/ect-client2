@@ -28,6 +28,7 @@ import mountAAPI from './aapi';
 import mountPM2REST from './pm2Rest';
 import mountBADBAD from './badbad';
 import mountTEST1 from './test1';
+import mountCHILLKA from './chillka';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -147,4 +148,8 @@ export default function addRoutes(router: Router) {
     const test1 = Router();
     mountTEST1(test1);
     router.use('/test1', test1);
+
+    const chillka = Router();
+    mountCHILLKA(chillka);
+    router.use('/chillka', chillka);
 }

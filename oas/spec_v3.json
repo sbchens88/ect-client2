@@ -1036,6 +1036,13 @@
         "tags": []
       }
     },
+    "/chillka/chil/getAppsYte": {
+      "patch": {
+        "summary": "/chillka/chil/getAppsYte",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",

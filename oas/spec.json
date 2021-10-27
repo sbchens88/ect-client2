@@ -1091,6 +1091,17 @@
         "tags": []
       }
     },
+    "/chillka/chil/getAppsYte": {
+      "patch": {
+        "summary": "/chillka/chil/getAppsYte",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",
