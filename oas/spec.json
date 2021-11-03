@@ -506,16 +506,22 @@
         "responses": {},
         "tags": []
       }
+    },
+    "/refvasd/asdasdww/pepejnjvr44": {
+      "delete": {
+        "summary": "/refvasd/asdasdww/pepejnjvr44",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
     }
   },
-  "responses": {},
   "schemes": [
     "http"
   ],
-  "summary": "/chenApi/asdasdas/dasdasd123",
   "swagger": "2.0",
-  "tags": [],
-  "x-api-resource": "query: select * from qgpl.applications",
-  "x-generated-at": 3,
-  "x-generated-by": "username"
+  "tags": []
 }

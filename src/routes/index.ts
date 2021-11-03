@@ -33,6 +33,7 @@ import mountTESTINGAPI from './testingApi';
 import mountTESTING from './testing';
 import mountCHENAPI from './chenApi';
 import mountASDASDA from './asdasda';
+import mountREFVASD from './refvasd';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -172,4 +173,8 @@ export default function addRoutes(router: Router) {
     const asdasda = Router();
     mountASDASDA(asdasda);
     router.use('/asdasda', asdasda);
+
+    const refvasd = Router();
+    mountREFVASD(refvasd);
+    router.use('/refvasd', refvasd);
 }

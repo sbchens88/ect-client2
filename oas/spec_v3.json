@@ -346,13 +346,16 @@
         "responses": {},
         "tags": []
       }
+    },
+    "/refvasd/asdasdww/pepejnjvr44": {
+      "delete": {
+        "summary": "/refvasd/asdasdww/pepejnjvr44",
+        "responses": {},
+        "tags": []
+      }
     }
   },
-  "summary": "/chenApi/asdasdas/dasdasd123",
   "tags": [],
-  "x-api-resource": "query: select * from qgpl.applications",
-  "x-generated-at": 3,
-  "x-generated-by": "username",
   "servers": [
     {
       "url": "http://localhost:2222"
