@@ -1,12 +1,15 @@
 {
+  "consumes": [
+    "application/json"
+  ],
   "definitions": {},
-  "host": "localhost:3001",
+  "host": "localhost:2222",
   "info": {
     "title": "eradani-connect-template",
-    "version": "2.5.2",
-    "description": "Specification JSONs: [v2](/api-spec/v2), [v3](/api-spec/v3).\n\nEradani Connect Template Application",
-    "x-chen-testing": "123"
+    "version": "2.6.0",
+    "description": "Specification JSONs: [v2](/api-spec/v2), [v3](/api-spec/v3).\n\nEradani Connect Template Application"
   },
+  "parameters": [],
   "paths": {
     "/": {
       "get": {
@@ -27,21 +30,11 @@
                 }
               }
             }
-          },
-          "304": {}
+          }
         },
         "tags": [],
-        "x-api-resource": "SELECT * FROM ...",
-        "x-generated-at": "Some time string",
-        "x-generated-by": "USERNAME",
-        "info": {
-          "x-api-resource": "SELECT * FROM ...",
-          "x-generated-at": "Some time string",
-          "x-generated-by": "USERNAME"
-        },
         "produces": [
-          "application/json",
-          "text/html"
+          "application/json"
         ]
       }
     },
@@ -55,88 +48,11 @@
           {
             "name": "num",
             "in": "path",
-            "required": true,
-            "type": "integer",
-            "example": 5
+            "required": true
           }
         ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "input": {
-                  "type": "number",
-                  "example": 5
-                },
-                "output": {
-                  "type": "number",
-                  "example": 500
-                }
-              }
-            }
-          },
-          "304": {},
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "type": "string",
-                  "example": "Bad Data Supplied to API"
-                },
-                "errors": {
-                  "type": "object",
-                  "properties": {
-                    "num": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": "string",
-                          "example": "a"
-                        },
-                        "msg": {
-                          "type": "string",
-                          "example": "Invalid value"
-                        },
-                        "param": {
-                          "type": "string",
-                          "example": "num"
-                        },
-                        "location": {
-                          "type": "string",
-                          "example": "params"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "type": "string",
-                  "example": "Unknown Error"
-                },
-                "data": {
-                  "type": "null",
-                  "example": null
-                }
-              }
-            }
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
+        "responses": {},
+        "tags": []
       }
     },
     "/api/sql/customers": {
@@ -145,84 +61,9 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "type": "integer",
-            "name": "minBaldue",
-            "in": "query",
-            "example": "100"
-          },
-          {
-            "type": "integer",
-            "name": "maxBaldue",
-            "in": "query",
-            "example": "500"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "CUSNUM": {
-                    "type": "number"
-                  },
-                  "LSTNAM": {
-                    "type": "string"
-                  },
-                  "INIT": {
-                    "type": "string"
-                  },
-                  "STREET": {
-                    "type": "string"
-                  },
-                  "CITY": {
-                    "type": "string"
-                  },
-                  "STATE": {
-                    "type": "string"
-                  },
-                  "ZIPCOD": {
-                    "type": "number"
-                  },
-                  "CDTLMT": {
-                    "type": "number"
-                  },
-                  "CHGCOD": {
-                    "type": "number"
-                  },
-                  "BALDUE": {
-                    "type": "number"
-                  },
-                  "CDTDUE": {
-                    "type": "number"
-                  }
-                },
-                "required": [
-                  "CUSNUM",
-                  "LSTNAM",
-                  "INIT",
-                  "STREET",
-                  "CITY",
-                  "STATE",
-                  "ZIPCOD",
-                  "CDTLMT",
-                  "CHGCOD",
-                  "BALDUE",
-                  "CDTDUE"
-                ]
-              }
-            }
-          },
-          "304": {}
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     },
     "/api/aarontest3/testtestsql": {
@@ -242,44 +83,9 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "required": true,
-            "schema": {
-              "type": "object",
-              "properties": {
-                "username": {
-                  "type": "string",
-                  "example": "**PROTECTED FIELD**"
-                },
-                "password": {
-                  "type": "string",
-                  "example": "******"
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "token": {
-                  "type": "string",
-                  "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzcnByZiIsImlhdCI6MTYyNDY1ODcxNiwiZXhwIjoxNjI0NjYyMzE2fQ.LC5owsV5A5Llh2oNdgYAXYecbZBHoWSvIyAZY8l7JU0"
-                }
-              }
-            }
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     },
     "/auth/verify-jwt": {
@@ -289,32 +95,8 @@
           "application/json"
         ],
         "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "valid": {
-                  "type": "boolean",
-                  "example": true
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized"
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ],
-        "security": [
-          {
-            "authorization": []
-          }
-        ]
+        "responses": {},
+        "tags": []
       }
     },
     "/firstRoute/secondRoute/thirdRoute": {
@@ -324,54 +106,8 @@
           "application/json"
         ],
         "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "ID": {
-                    "type": "number"
-                  },
-                  "NAME": {
-                    "type": "string"
-                  },
-                  "DESCRIPTION": {
-                    "type": "string"
-                  },
-                  "APPLICATION_PATH": {
-                    "type": "string"
-                  },
-                  "APPLICATION_STATUS": {
-                    "type": "string"
-                  },
-                  "PORT": {
-                    "type": "number"
-                  },
-                  "LIBRARY": {
-                    "type": "string"
-                  },
-                  "SOURCE": {
-                    "type": "string"
-                  },
-                  "LOGS": {
-                    "type": "string"
-                  },
-                  "GIT_REPOSITORY": {
-                    "type": "null"
-                  }
-                }
-              }
-            }
-          },
-          "304": {}
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
+        "responses": {},
+        "tags": []
       }
     },
     "/chenApps/applicationsInApiController/getApplicationsRecordss": {
@@ -413,70 +149,9 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "type": "number",
-            "name": "appId",
-            "in": "query",
-            "example": 108
-          }
-        ],
-        "responses": {
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "type": "string",
-                  "example": "Bad Data Supplied to API"
-                },
-                "errors": {
-                  "type": "object",
-                  "properties": {
-                    "appId": {
-                      "type": "object",
-                      "properties": {
-                        "msg": {
-                          "type": "string",
-                          "example": "Invalid value"
-                        },
-                        "param": {
-                          "type": "string",
-                          "example": "appId"
-                        },
-                        "location": {
-                          "type": "string",
-                          "example": "body"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "type": "string",
-                  "example": "Unknown Error"
-                },
-                "data": {
-                  "type": "null",
-                  "example": null
-                }
-              }
-            }
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     },
     "/coolestApi/applicationsMgr/deleteAppByIdtestin": {
@@ -496,124 +171,9 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "required": true,
-            "schema": {
-              "type": "object",
-              "properties": {
-                "appId": {
-                  "type": "number",
-                  "example": 110
-                },
-                "lib": {
-                  "type": "string",
-                  "example": "qgpl"
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "ID": {
-                    "type": "number"
-                  },
-                  "NAME": {
-                    "type": "string"
-                  },
-                  "DESCRIPTION": {
-                    "type": "string"
-                  },
-                  "APPLICATION_PATH": {
-                    "type": "string"
-                  },
-                  "APPLICATION_STATUS": {
-                    "type": "string"
-                  },
-                  "PORT": {
-                    "type": "number"
-                  },
-                  "LIBRARY": {
-                    "type": "string"
-                  },
-                  "SOURCE": {
-                    "type": "string"
-                  },
-                  "LOGS": {
-                    "type": "string"
-                  },
-                  "GIT_REPOSITORY": {
-                    "type": "null"
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "type": "string",
-                  "example": "Bad Data Supplied to API"
-                },
-                "errors": {
-                  "type": "object",
-                  "properties": {
-                    "appId": {
-                      "type": "object",
-                      "properties": {
-                        "msg": {
-                          "type": "string",
-                          "example": "Invalid value"
-                        },
-                        "param": {
-                          "type": "string",
-                          "example": "appId"
-                        },
-                        "location": {
-                          "type": "string",
-                          "example": "body"
-                        }
-                      }
-                    },
-                    "lib": {
-                      "type": "object",
-                      "properties": {
-                        "msg": {
-                          "type": "string",
-                          "example": "Invalid value"
-                        },
-                        "param": {
-                          "type": "string",
-                          "example": "lib"
-                        },
-                        "location": {
-                          "type": "string",
-                          "example": "body"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     },
     "/chenTesting/theParamFeature/getApplicationByIdKey": {
@@ -622,75 +182,9 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "required": true,
-            "schema": {
-              "type": "object",
-              "properties": {
-                "appId": {
-                  "type": "number",
-                  "example": 110
-                }
-              }
-            }
-          },
-          {
-            "type": "number",
-            "name": "appId",
-            "in": "query",
-            "example": 110
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "ID": {
-                    "type": "number"
-                  },
-                  "NAME": {
-                    "type": "string"
-                  },
-                  "DESCRIPTION": {
-                    "type": "string"
-                  },
-                  "APPLICATION_PATH": {
-                    "type": "string"
-                  },
-                  "APPLICATION_STATUS": {
-                    "type": "string"
-                  },
-                  "PORT": {
-                    "type": "number"
-                  },
-                  "LIBRARY": {
-                    "type": "string"
-                  },
-                  "SOURCE": {
-                    "type": "string"
-                  },
-                  "LOGS": {
-                    "type": "string"
-                  },
-                  "GIT_REPOSITORY": {
-                    "type": "null"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     },
     "/letsApi/controllerForApi/getUserByUserNameEP": {
@@ -821,70 +315,9 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "type": "integer",
-            "name": "first",
-            "in": "query",
-            "example": "123"
-          }
-        ],
-        "responses": {
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "type": "string",
-                  "example": "Bad Data Supplied to API"
-                },
-                "errors": {
-                  "type": "object",
-                  "properties": {
-                    "first": {
-                      "type": "object",
-                      "properties": {
-                        "msg": {
-                          "type": "string",
-                          "example": "Invalid value"
-                        },
-                        "param": {
-                          "type": "string",
-                          "example": "first"
-                        },
-                        "location": {
-                          "type": "string",
-                          "example": "body"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "type": "string",
-                  "example": "Unknown Error"
-                },
-                "data": {
-                  "type": "null",
-                  "example": null
-                }
-              }
-            }
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     },
     "/asdsad/asdasdawqe/qweqwe2": {
@@ -894,28 +327,8 @@
           "application/json"
         ],
         "parameters": [],
-        "responses": {
-          "500": {
-            "description": "Internal Server Error",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "type": "string",
-                  "example": "Unknown Error"
-                },
-                "data": {
-                  "type": "null",
-                  "example": null
-                }
-              }
-            }
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
+        "responses": {},
+        "tags": []
       }
     },
     "/asdsad/asdasdertygfawqe/qweqwe22": {
@@ -936,53 +349,8 @@
           "application/json"
         ],
         "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "ID": {
-                    "type": "number"
-                  },
-                  "NAME": {
-                    "type": "string"
-                  },
-                  "DESCRIPTION": {
-                    "type": "string"
-                  },
-                  "APPLICATION_PATH": {
-                    "type": "string"
-                  },
-                  "APPLICATION_STATUS": {
-                    "type": "string"
-                  },
-                  "PORT": {
-                    "type": "number"
-                  },
-                  "LIBRARY": {
-                    "type": "string"
-                  },
-                  "SOURCE": {
-                    "type": "string"
-                  },
-                  "LOGS": {
-                    "type": "string"
-                  },
-                  "GIT_REPOSITORY": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
+        "responses": {},
+        "tags": []
       }
     },
     "/chen/testingA/getSData": {
@@ -1014,68 +382,8 @@
           "application/json"
         ],
         "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "ID": {
-                    "type": "number"
-                  },
-                  "NAME": {
-                    "type": "string"
-                  },
-                  "DESCRIPTION": {
-                    "type": "string"
-                  },
-                  "APPLICATION_PATH": {
-                    "type": "string"
-                  },
-                  "APPLICATION_STATUS": {
-                    "type": "string"
-                  },
-                  "PORT": {
-                    "type": "number"
-                  },
-                  "LIBRARY": {
-                    "type": "string"
-                  },
-                  "SOURCE": {
-                    "type": "string"
-                  },
-                  "LOGS": {
-                    "type": "string"
-                  },
-                  "GIT_REPOSITORY": {
-                    "type": [
-                      "string",
-                      "null"
-                    ]
-                  }
-                },
-                "required": [
-                  "ID",
-                  "NAME",
-                  "DESCRIPTION",
-                  "APPLICATION_PATH",
-                  "APPLICATION_STATUS",
-                  "PORT",
-                  "LIBRARY",
-                  "SOURCE",
-                  "LOGS",
-                  "GIT_REPOSITORY"
-                ]
-              }
-            }
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
+        "responses": {},
+        "tags": []
       }
     },
     "/badbad/apiRoute/ohNo": {
@@ -1085,68 +393,8 @@
           "application/json"
         ],
         "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "ID": {
-                    "type": "number"
-                  },
-                  "NAME": {
-                    "type": "string"
-                  },
-                  "DESCRIPTION": {
-                    "type": "string"
-                  },
-                  "APPLICATION_PATH": {
-                    "type": "string"
-                  },
-                  "APPLICATION_STATUS": {
-                    "type": "string"
-                  },
-                  "PORT": {
-                    "type": "number"
-                  },
-                  "LIBRARY": {
-                    "type": "string"
-                  },
-                  "SOURCE": {
-                    "type": "string"
-                  },
-                  "LOGS": {
-                    "type": "string"
-                  },
-                  "GIT_REPOSITORY": {
-                    "type": [
-                      "string",
-                      "null"
-                    ]
-                  }
-                },
-                "required": [
-                  "ID",
-                  "NAME",
-                  "DESCRIPTION",
-                  "APPLICATION_PATH",
-                  "APPLICATION_STATUS",
-                  "PORT",
-                  "LIBRARY",
-                  "SOURCE",
-                  "LOGS",
-                  "GIT_REPOSITORY"
-                ]
-              }
-            }
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
+        "responses": {},
+        "tags": []
       }
     },
     "/test1/apiasdasd/eradanisdasd": {
@@ -1248,159 +496,9 @@
         "tags": []
       }
     },
-    "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
-      "get": {
-        "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {
-          "500": {
-            "description": "Internal Server Error",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "type": "string",
-                  "example": "Unknown Error"
-                },
-                "data": {
-                  "type": "null",
-                  "example": null
-                }
-              }
-            }
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
-      }
-    },
-    "/apiTes/tingControl/lerEndpoint1": {
-      "get": {
-        "summary": "/apiTes/tingControl/lerEndpoint1",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {},
-        "tags": []
-      }
-    },
-    "/testingTo/astContrlr/someDataEndpointsss": {
-      "get": {
-        "summary": "/testingTo/astContrlr/someDataEndpointsss",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {},
-        "tags": []
-      }
-    },
-    "/asd/asdasdasd/asdasd": {
-      "get": {
-        "summary": "/asd/asdasdasd/asdasd",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {},
-        "tags": []
-      }
-    },
-    "/asdasdas/dasdasd/asdasasd": {
-      "get": {
-        "summary": "/asdasdas/dasdasd/asdasasd",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {},
-        "tags": []
-      }
-    },
-    "/ranApi/randControlerC/testingDeleteFunction": {
-      "delete": {
-        "summary": "/ranApi/randControlerC/testingDeleteFunction",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {},
-        "tags": []
-      }
-    },
-    "/teston/delteMethodFun/gettingSomeApDIngo": {
-      "delete": {
-        "summary": "/teston/delteMethodFun/gettingSomeApDIngo",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {},
-        "tags": []
-      }
-    },
-    "/teston/delteMethodFun/gettingSomeApDIngoqwe": {
-      "delete": {
-        "summary": "/teston/delteMethodFun/gettingSomeApDIngoqwe",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {},
-        "tags": []
-      }
-    },
-    "/teston/delteMethodFun/gettingSomeApDIngoqwe1": {
-      "delete": {
-        "summary": "/teston/delteMethodFun/gettingSomeApDIngoqwe1",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {},
-        "tags": []
-      }
-    },
-    "/toastApi/toastContrl/testingToasting": {
-      "get": {
-        "summary": "/toastApi/toastContrl/testingToasting",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {
-          "500": {
-            "description": "Internal Server Error",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "type": "string",
-                  "example": "Unknown Error"
-                },
-                "data": {
-                  "type": "null",
-                  "example": null
-                }
-              }
-            }
-          }
-        },
-        "tags": [],
-        "produces": [
-          "application/json"
-        ]
-      }
-    },
-    "/toastApi/toastContrl/testingToasting1": {
-      "get": {
-        "summary": "/toastApi/toastContrl/testingToasting1",
+    "/asdasda/asdasdsa/dasdaq43423": {
+      "put": {
+        "summary": "/asdasda/asdasdsa/dasdaq43423",
         "consumes": [
           "application/json"
         ],
@@ -1410,16 +508,14 @@
       }
     }
   },
+  "responses": {},
   "schemes": [
     "http"
   ],
-  "securityDefinitions": {
-    "authorization": {
-      "name": "authorization",
-      "in": "header",
-      "type": "apiKey"
-    }
-  },
+  "summary": "/chenApi/asdasdas/dasdasd123",
   "swagger": "2.0",
-  "tags": []
+  "tags": [],
+  "x-api-resource": "query: select * from qgpl.applications",
+  "x-generated-at": 3,
+  "x-generated-by": "username"
 }
