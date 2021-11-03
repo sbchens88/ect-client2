@@ -29,6 +29,8 @@ import mountPM2REST from './pm2Rest';
 import mountBADBAD from './badbad';
 import mountTEST1 from './test1';
 import mountCHILLKA from './chillka';
+import mountTESTINGAPI from './testingApi';
+import mountTESTING from './testing';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -152,4 +154,12 @@ export default function addRoutes(router: Router) {
     const chillka = Router();
     mountCHILLKA(chillka);
     router.use('/chillka', chillka);
+
+    const testingApi = Router();
+    mountTESTINGAPI(testingApi);
+    router.use('/testingApi', testingApi);
+
+    const testing = Router();
+    mountTESTING(testing);
+    router.use('/testing', testing);
 }

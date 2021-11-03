@@ -3,7 +3,8 @@
   "info": {
     "title": "eradani-connect-template",
     "version": "2.5.2",
-    "description": "Specification JSONs: [v2](/api-spec/v2), [v3](/api-spec/v3).\n\nEradani Connect Template Application"
+    "description": "Specification JSONs: [v2](/api-spec/v2), [v3](/api-spec/v3).\n\nEradani Connect Template Application",
+    "x-chen-testing": "123"
   },
   "paths": {
     "/": {
@@ -41,7 +42,15 @@
             "description": ""
           }
         },
-        "tags": []
+        "tags": [],
+        "x-api-resource": "SELECT * FROM ...",
+        "x-generated-at": "Some time string",
+        "x-generated-by": "USERNAME",
+        "info": {
+          "x-api-resource": "SELECT * FROM ...",
+          "x-generated-at": "Some time string",
+          "x-generated-by": "USERNAME"
+        }
       }
     },
     "/api/rpg/simple-calc/{num}": {
@@ -959,7 +968,66 @@
     "/pm2Rest/artTesting/apiGenratorCall": {
       "get": {
         "summary": "/pm2Rest/artTesting/apiGenratorCall",
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "ID": {
+                        "type": "number"
+                      },
+                      "NAME": {
+                        "type": "string"
+                      },
+                      "DESCRIPTION": {
+                        "type": "string"
+                      },
+                      "APPLICATION_PATH": {
+                        "type": "string"
+                      },
+                      "APPLICATION_STATUS": {
+                        "type": "string"
+                      },
+                      "PORT": {
+                        "type": "number"
+                      },
+                      "LIBRARY": {
+                        "type": "string"
+                      },
+                      "SOURCE": {
+                        "type": "string"
+                      },
+                      "LOGS": {
+                        "type": "string"
+                      },
+                      "GIT_REPOSITORY": {
+                        "nullable": true,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "ID",
+                      "NAME",
+                      "DESCRIPTION",
+                      "APPLICATION_PATH",
+                      "APPLICATION_STATUS",
+                      "PORT",
+                      "LIBRARY",
+                      "SOURCE",
+                      "LOGS",
+                      "GIT_REPOSITORY"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
         "tags": []
       }
     },
@@ -1039,6 +1107,20 @@
     "/chillka/chil/getAppsYte": {
       "patch": {
         "summary": "/chillka/chil/getAppsYte",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/testingApi/testController/testEndpoint1": {
+      "get": {
+        "summary": "/testingApi/testController/testEndpoint1",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/testing/theNew/featureSwag": {
+      "patch": {
+        "summary": "/testing/theNew/featureSwag",
         "responses": {},
         "tags": []
       }
