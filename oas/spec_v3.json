@@ -1146,6 +1146,13 @@
         "tags": []
       }
     },
+    "/testing/theNew/featureSwag1234567": {
+      "patch": {
+        "summary": "/testing/theNew/featureSwag1234567",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",

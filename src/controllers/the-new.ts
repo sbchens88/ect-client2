@@ -13,7 +13,10 @@ import {
     FeatureSwagAdInput,
     FeatureSwagAdpppppMain,
     FeatureSwagAdpppppOutput,
-    FeatureSwagAdpppppInput
+    FeatureSwagAdpppppInput,
+    FeatureSwagAdpppppddMain,
+    FeatureSwagAdpppppddOutput,
+    FeatureSwagAdpppppddInput
 } from 'src/models/the-new';
 
 const logger = createLogger('controllers/theNew');
@@ -40,4 +43,10 @@ export async function FeatureSwagAdppppp(inputs: JSONObject): Promise<FeatureSwa
     logger.debug('Calling featureSwagAdppppp with args: ', inputs);
     const params: FeatureSwagAdpppppInput = {};
     return transport.execute(FeatureSwagAdpppppMain, params) as Promise<FeatureSwagAdpppppOutput>;
+}
+
+export async function FeatureSwagAdpppppdd(inputs: JSONObject): Promise<FeatureSwagAdpppppddOutput> {
+    logger.debug('Calling featureSwagAdpppppdd with args: ', inputs);
+    const params: FeatureSwagAdpppppddInput = {};
+    return transport.execute(FeatureSwagAdpppppddMain, params) as Promise<FeatureSwagAdpppppddOutput>;
 }
