@@ -14,4 +14,9 @@ export default function mountTHENEW(router: Router) {
         validate(validators.FeatureSwagAsd),
         respond((req: any) => theNewController.FeatureSwagAsd(Object.assign({}, req.params, req.body, req.query)))
     );
+    router.patch(
+        '/featureSwag12345',
+        validate(validators.FeatureSwagAd),
+        respond((req: any) => theNewController.FeatureSwagAd(Object.assign({}, req.params, req.body, req.query)))
+    );
 }

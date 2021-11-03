@@ -1132,6 +1132,13 @@
         "tags": []
       }
     },
+    "/testing/theNew/featureSwag12345": {
+      "patch": {
+        "summary": "/testing/theNew/featureSwag12345",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",
