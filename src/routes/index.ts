@@ -36,6 +36,7 @@ import mountASDASDA from './asdasda';
 import mountREFVASD from './refvasd';
 import mountPOIKG from './poikg';
 import mountVENDORE from './vendorE';
+import mountASD from './asd';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -187,4 +188,8 @@ export default function addRoutes(router: Router) {
     const vendorE = Router();
     mountVENDORE(vendorE);
     router.use('/vendorE', vendorE);
+
+    const asd = Router();
+    mountASD(asd);
+    router.use('/asd', asd);
 }

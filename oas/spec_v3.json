@@ -368,6 +368,16 @@
       "post": {
         "summary": "/vendorE/xtension/testing8",
         "responses": {},
+        "tags": [],
+        "x-api-resource": "query: select * from qgpl.applications",
+        "x-generated-at": 3,
+        "x-generated-by": "username"
+      }
+    },
+    "/asd/asdwe/asdsdsa8899": {
+      "post": {
+        "summary": "/asd/asdwe/asdsdsa8899",
+        "responses": {},
         "tags": []
       }
     }
