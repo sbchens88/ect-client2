@@ -15,3 +15,8 @@ export const FeatureSwagAdMain = new eradaniConnect.run.Sql(`select * from qgpl.
 export interface FeatureSwagAdInput {}
 export type FeatureSwagAdOutputRecord = JSONObject;
 export interface FeatureSwagAdOutput extends Array<FeatureSwagAdOutputRecord> {}
+
+export const FeatureSwagAdpppppMain = new eradaniConnect.run.Sql(`select * from qgpl.applications`);
+export interface FeatureSwagAdpppppInput {}
+export type FeatureSwagAdpppppOutputRecord = JSONObject;
+export interface FeatureSwagAdpppppOutput extends Array<FeatureSwagAdpppppOutputRecord> {}

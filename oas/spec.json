@@ -1215,6 +1215,17 @@
         "tags": []
       }
     },
+    "/testing/theNew/featureSwag123456": {
+      "patch": {
+        "summary": "/testing/theNew/featureSwag123456",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",

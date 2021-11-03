@@ -3,6 +3,8 @@ import {  } from "express-validator";
 export const FeatureSwag: InputCheckChain[] = []
 export const FeatureSwagAsd: InputCheckChain[] = []
 export const FeatureSwagAd: InputCheckChain[] = []
+export const FeatureSwagAdppppp: InputCheckChain[] = []
+
 
 
 
