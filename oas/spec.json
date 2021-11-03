@@ -1237,6 +1237,17 @@
         "tags": []
       }
     },
+    "/chenApi/asdasdas/dasdasd123": {
+      "patch": {
+        "summary": "/chenApi/asdasdas/dasdasd123",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",

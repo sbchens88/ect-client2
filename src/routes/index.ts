@@ -31,6 +31,7 @@ import mountTEST1 from './test1';
 import mountCHILLKA from './chillka';
 import mountTESTINGAPI from './testingApi';
 import mountTESTING from './testing';
+import mountCHENAPI from './chenApi';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -162,4 +163,8 @@ export default function addRoutes(router: Router) {
     const testing = Router();
     mountTESTING(testing);
     router.use('/testing', testing);
+
+    const chenApi = Router();
+    mountCHENAPI(chenApi);
+    router.use('/chenApi', chenApi);
 }
