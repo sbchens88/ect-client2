@@ -526,6 +526,20 @@
         ],
         "parameters": [],
         "responses": {},
+        "tags": [],
+        "x-api-resource": "query: select * from qgpl.applications",
+        "x-generated-at": 3,
+        "x-generated-by": "username"
+      }
+    },
+    "/vendorE/xtension/testing8": {
+      "post": {
+        "summary": "/vendorE/xtension/testing8",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
         "tags": []
       }
     }

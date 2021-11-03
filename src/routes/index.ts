@@ -35,6 +35,7 @@ import mountCHENAPI from './chenApi';
 import mountASDASDA from './asdasda';
 import mountREFVASD from './refvasd';
 import mountPOIKG from './poikg';
+import mountVENDORE from './vendorE';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -182,4 +183,8 @@ export default function addRoutes(router: Router) {
     const poikg = Router();
     mountPOIKG(poikg);
     router.use('/poikg', poikg);
+
+    const vendorE = Router();
+    mountVENDORE(vendorE);
+    router.use('/vendorE', vendorE);
 }
