@@ -1193,6 +1193,17 @@
         "tags": []
       }
     },
+    "/testing/theNew/featureSwag123": {
+      "patch": {
+        "summary": "/testing/theNew/featureSwag123",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/asdasdasdas/dasdasdasdasd/asdasasdasd": {
       "get": {
         "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd",
