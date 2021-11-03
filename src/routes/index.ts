@@ -34,6 +34,7 @@ import mountTESTING from './testing';
 import mountCHENAPI from './chenApi';
 import mountASDASDA from './asdasda';
 import mountREFVASD from './refvasd';
+import mountPOIKG from './poikg';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -177,4 +178,8 @@ export default function addRoutes(router: Router) {
     const refvasd = Router();
     mountREFVASD(refvasd);
     router.use('/refvasd', refvasd);
+
+    const poikg = Router();
+    mountPOIKG(poikg);
+    router.use('/poikg', poikg);
 }

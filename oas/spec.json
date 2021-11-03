@@ -517,11 +517,27 @@
         "responses": {},
         "tags": []
       }
+    },
+    "/poikg/yujhsdsa/reepfoj8888": {
+      "delete": {
+        "summary": "/poikg/yujhsdsa/reepfoj8888",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
     }
   },
+  "responses": {},
   "schemes": [
     "http"
   ],
+  "summary": "/refvasd/asdasdww/pepejnjvr44",
   "swagger": "2.0",
-  "tags": []
+  "tags": [],
+  "x-api-resource": "query: select * from qgpl.applications",
+  "x-generated-at": 3,
+  "x-generated-by": "username"
 }

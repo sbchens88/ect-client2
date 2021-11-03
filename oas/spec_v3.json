@@ -353,9 +353,20 @@
         "responses": {},
         "tags": []
       }
+    },
+    "/poikg/yujhsdsa/reepfoj8888": {
+      "delete": {
+        "summary": "/poikg/yujhsdsa/reepfoj8888",
+        "responses": {},
+        "tags": []
+      }
     }
   },
+  "summary": "/refvasd/asdasdww/pepejnjvr44",
   "tags": [],
+  "x-api-resource": "query: select * from qgpl.applications",
+  "x-generated-at": 3,
+  "x-generated-by": "username",
   "servers": [
     {
       "url": "http://localhost:2222"
