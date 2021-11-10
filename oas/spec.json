@@ -30,11 +30,13 @@
                 }
               }
             }
-          }
+          },
+          "304": {}
         },
         "tags": [],
         "produces": [
-          "application/json"
+          "application/json",
+          "text/html"
         ]
       }
     },
@@ -485,6 +487,17 @@
         "tags": []
       }
     },
+    "/testing/yamlParam/enpoint": {
+      "get": {
+        "summary": "/testing/yamlParam/enpoint",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/chenApi/asdasdas/dasdasd123": {
       "patch": {
         "summary": "/chenApi/asdasdas/dasdasd123",
@@ -554,7 +567,10 @@
         ],
         "parameters": [],
         "responses": {},
-        "tags": []
+        "tags": [],
+        "x-api-resource": "query: select * from qgpl.applications",
+        "x-generated-at": "Wed Nov 03 2021 14:40:15 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
       }
     }
   },
@@ -562,10 +578,6 @@
   "schemes": [
     "http"
   ],
-  "summary": "/refvasd/asdasdww/pepejnjvr44",
   "swagger": "2.0",
-  "tags": [],
-  "x-api-resource": "query: select * from qgpl.applications",
-  "x-generated-at": 3,
-  "x-generated-by": "username"
+  "tags": []
 }

@@ -23,8 +23,22 @@
                     }
                   }
                 }
+              },
+              "text/html": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Up and running!"
+                    }
+                  }
+                }
               }
             }
+          },
+          "304": {
+            "description": ""
           }
         },
         "tags": []
@@ -333,6 +347,13 @@
         "tags": []
       }
     },
+    "/testing/yamlParam/enpoint": {
+      "get": {
+        "summary": "/testing/yamlParam/enpoint",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/chenApi/asdasdas/dasdasd123": {
       "patch": {
         "summary": "/chenApi/asdasdas/dasdasd123",
@@ -378,15 +399,14 @@
       "post": {
         "summary": "/asd/asdwe/asdsdsa8899",
         "responses": {},
-        "tags": []
+        "tags": [],
+        "x-api-resource": "query: select * from qgpl.applications",
+        "x-generated-at": "Wed Nov 03 2021 14:40:15 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
       }
     }
   },
-  "summary": "/refvasd/asdasdww/pepejnjvr44",
   "tags": [],
-  "x-api-resource": "query: select * from qgpl.applications",
-  "x-generated-at": 3,
-  "x-generated-by": "username",
   "servers": [
     {
       "url": "http://localhost:2222"
