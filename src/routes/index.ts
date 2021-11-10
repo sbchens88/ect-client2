@@ -37,6 +37,7 @@ import mountREFVASD from './refvasd';
 import mountPOIKG from './poikg';
 import mountVENDORE from './vendorE';
 import mountASD from './asd';
+import mountYAMLTE from './yamlTe';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -192,4 +193,8 @@ export default function addRoutes(router: Router) {
     const asd = Router();
     mountASD(asd);
     router.use('/asd', asd);
+
+    const yamlTe = Router();
+    mountYAMLTE(yamlTe);
+    router.use('/yamlTe', yamlTe);
 }

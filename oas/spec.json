@@ -493,9 +493,42 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": [],
-        "responses": {},
-        "tags": []
+        "parameters": [
+          {
+            "type": "string",
+            "name": "in",
+            "in": "query",
+            "example": "jkj"
+          },
+          {
+            "type": "string",
+            "name": "p1",
+            "in": "query",
+            "example": "jkj"
+          }
+        ],
+        "responses": {
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Unknown Error"
+                },
+                "data": {
+                  "type": "null",
+                  "example": null
+                }
+              }
+            }
+          }
+        },
+        "tags": [],
+        "produces": [
+          "application/json"
+        ]
       }
     },
     "/chenApi/asdasdas/dasdasd123": {
@@ -571,6 +604,17 @@
         "x-api-resource": "query: select * from qgpl.applications",
         "x-generated-at": "Wed Nov 03 2021 14:40:15 GMT+0000 (Coordinated Universal Time)",
         "x-generated-by": "ecapitst"
+      }
+    },
+    "/yamlTe/stingWi/thParams": {
+      "get": {
+        "summary": "/yamlTe/stingWi/thParams",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     }
   },

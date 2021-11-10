@@ -350,7 +350,46 @@
     "/testing/yamlParam/enpoint": {
       "get": {
         "summary": "/testing/yamlParam/enpoint",
-        "responses": {},
+        "parameters": [
+          {
+            "name": "in",
+            "in": "query",
+            "example": "jkj",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "p1",
+            "in": "query",
+            "example": "jkj",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Unknown Error"
+                    },
+                    "data": {
+                      "example": null,
+                      "nullable": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "tags": []
       }
     },
@@ -403,6 +442,13 @@
         "x-api-resource": "query: select * from qgpl.applications",
         "x-generated-at": "Wed Nov 03 2021 14:40:15 GMT+0000 (Coordinated Universal Time)",
         "x-generated-by": "ecapitst"
+      }
+    },
+    "/yamlTe/stingWi/thParams": {
+      "get": {
+        "summary": "/yamlTe/stingWi/thParams",
+        "responses": {},
+        "tags": []
       }
     }
   },
