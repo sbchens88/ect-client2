@@ -9,4 +9,9 @@ export default function mountSTINGYA(router: Router) {
         validate(validators.YamlTeeing),
         respond((req: any) => stingYaController.YamlTeeing(Object.assign({}, req.params, req.body, req.query)))
     );
+    router.get(
+        '/mlTesting123',
+        validate(validators.YamlTeeingQq),
+        respond((req: any) => stingYaController.YamlTeeingQq(Object.assign({}, req.params, req.body, req.query)))
+    );
 }
