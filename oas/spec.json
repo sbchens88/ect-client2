@@ -616,6 +616,17 @@
         "responses": {},
         "tags": []
       }
+    },
+    "/yamlTe/stingYa/mlTesting": {
+      "get": {
+        "summary": "/yamlTe/stingYa/mlTesting",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "responses": {},

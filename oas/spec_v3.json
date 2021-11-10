@@ -450,6 +450,13 @@
         "responses": {},
         "tags": []
       }
+    },
+    "/yamlTe/stingYa/mlTesting": {
+      "get": {
+        "summary": "/yamlTe/stingYa/mlTesting",
+        "responses": {},
+        "tags": []
+      }
     }
   },
   "tags": [],
