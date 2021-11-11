@@ -38,6 +38,8 @@ import mountPOIKG from './poikg';
 import mountVENDORE from './vendorE';
 import mountASD from './asd';
 import mountYAMLTE from './yamlTe';
+import mountYAMLP from './yamlP';
+import mountYET1 from './yet1';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -197,4 +199,12 @@ export default function addRoutes(router: Router) {
     const yamlTe = Router();
     mountYAMLTE(yamlTe);
     router.use('/yamlTe', yamlTe);
+
+    const yamlP = Router();
+    mountYAMLP(yamlP);
+    router.use('/yamlP', yamlP);
+
+    const yet1 = Router();
+    mountYET1(yet1);
+    router.use('/yet1', yet1);
 }
