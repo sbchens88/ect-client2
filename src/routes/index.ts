@@ -38,6 +38,7 @@ import mountPOIKG from './poikg';
 import mountVENDORE from './vendorE';
 import mountASD from './asd';
 import mountYAMLTE from './yamlTe';
+import mountVALIDAT from './validat';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -197,4 +198,8 @@ export default function addRoutes(router: Router) {
     const yamlTe = Router();
     mountYAMLTE(yamlTe);
     router.use('/yamlTe', yamlTe);
+
+    const validat = Router();
+    mountVALIDAT(validat);
+    router.use('/validat', validat);
 }
