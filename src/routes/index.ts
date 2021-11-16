@@ -40,6 +40,7 @@ import mountASD from './asd';
 import mountYAMLTE from './yamlTe';
 import mountVALIDAT from './validat';
 import mountYMLTEESTIN from './ymlTeestin';
+import mountYMLEN from './ymlEn';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -207,4 +208,8 @@ export default function addRoutes(router: Router) {
     const ymlTeestin = Router();
     mountYMLTEESTIN(ymlTeestin);
     router.use('/ymlTeestin', ymlTeestin);
+
+    const ymlEn = Router();
+    mountYMLEN(ymlEn);
+    router.use('/ymlEn', ymlEn);
 }

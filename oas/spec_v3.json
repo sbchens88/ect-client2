@@ -485,6 +485,16 @@
       "get": {
         "summary": "/ymlTeestin/gWithVa/lidators",
         "responses": {},
+        "tags": [],
+        "x-api-resource": "1.yaml",
+        "x-generated-at": "Tue Nov 16 2021 15:50:16 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
+      }
+    },
+    "/ymlEn/dpoin/tPatch": {
+      "patch": {
+        "summary": "/ymlEn/dpoin/tPatch",
+        "responses": {},
         "tags": []
       }
     },
