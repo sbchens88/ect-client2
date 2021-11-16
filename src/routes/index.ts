@@ -39,6 +39,7 @@ import mountVENDORE from './vendorE';
 import mountASD from './asd';
 import mountYAMLTE from './yamlTe';
 import mountVALIDAT from './validat';
+import mountYMLTEESTIN from './ymlTeestin';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -202,4 +203,8 @@ export default function addRoutes(router: Router) {
     const validat = Router();
     mountVALIDAT(validat);
     router.use('/validat', validat);
+
+    const ymlTeestin = Router();
+    mountYMLTEESTIN(ymlTeestin);
+    router.use('/ymlTeestin', ymlTeestin);
 }
