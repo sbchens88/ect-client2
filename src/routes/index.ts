@@ -41,6 +41,7 @@ import mountYAMLTE from './yamlTe';
 import mountVALIDAT from './validat';
 import mountYMLTEESTIN from './ymlTeestin';
 import mountYMLEN from './ymlEn';
+import mountQWEWE from './qwewe';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -212,4 +213,8 @@ export default function addRoutes(router: Router) {
     const ymlEn = Router();
     mountYMLEN(ymlEn);
     router.use('/ymlEn', ymlEn);
+
+    const qwewe = Router();
+    mountQWEWE(qwewe);
+    router.use('/qwewe', qwewe);
 }
