@@ -42,6 +42,7 @@ import mountVALIDAT from './validat';
 import mountYMLTEESTIN from './ymlTeestin';
 import mountYMLEN from './ymlEn';
 import mountQWEWE from './qwewe';
+import mountASDF from './asdf';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -217,4 +218,8 @@ export default function addRoutes(router: Router) {
     const qwewe = Router();
     mountQWEWE(qwewe);
     router.use('/qwewe', qwewe);
+
+    const asdf = Router();
+    mountASDF(asdf);
+    router.use('/asdf', asdf);
 }
