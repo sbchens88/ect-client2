@@ -37,6 +37,17 @@
         "produces": [
           "application/json",
           "text/html"
+        ],
+        "security": [
+          {
+            "x-datadog-trace-id": []
+          },
+          {
+            "x-datadog-parent-id": []
+          },
+          {
+            "x-datadog-sampling-priority": []
+          }
         ]
       }
     },
@@ -358,6 +369,17 @@
     "/chen/testingA/getSData": {
       "get": {
         "summary": "/chen/testingA/getSData",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/chen/tstin/gvalidators": {
+      "get": {
+        "summary": "/chen/tstin/gvalidators",
         "consumes": [
           "application/json"
         ],
@@ -695,7 +717,10 @@
         ],
         "parameters": [],
         "responses": {},
-        "tags": []
+        "tags": [],
+        "x-api-resource": "1.yaml",
+        "x-generated-at": "Tue Nov 16 2021 20:57:25 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
       }
     },
     "/yamlP/aramsT/esting1": {
@@ -714,6 +739,23 @@
   "schemes": [
     "http"
   ],
+  "securityDefinitions": {
+    "x-datadog-trace-id": {
+      "name": "x-datadog-trace-id",
+      "in": "header",
+      "type": "apiKey"
+    },
+    "x-datadog-parent-id": {
+      "name": "x-datadog-parent-id",
+      "in": "header",
+      "type": "apiKey"
+    },
+    "x-datadog-sampling-priority": {
+      "name": "x-datadog-sampling-priority",
+      "in": "header",
+      "type": "apiKey"
+    }
+  },
   "swagger": "2.0",
   "tags": []
 }

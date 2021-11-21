@@ -41,7 +41,18 @@
             "description": ""
           }
         },
-        "tags": []
+        "tags": [],
+        "security": [
+          {
+            "x-datadog-trace-id": []
+          },
+          {
+            "x-datadog-parent-id": []
+          },
+          {
+            "x-datadog-sampling-priority": []
+          }
+        ]
       }
     },
     "/api/rpg/simple-calc/{num}": {
@@ -266,6 +277,13 @@
     "/chen/testingA/getSData": {
       "get": {
         "summary": "/chen/testingA/getSData",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/chen/tstin/gvalidators": {
+      "get": {
+        "summary": "/chen/tstin/gvalidators",
         "responses": {},
         "tags": []
       }
@@ -505,7 +523,10 @@
       "get": {
         "summary": "/qwewe/qweqwewq/eqweqwewe",
         "responses": {},
-        "tags": []
+        "tags": [],
+        "x-api-resource": "1.yaml",
+        "x-generated-at": "Tue Nov 16 2021 20:57:25 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
       }
     },
     "/yamlP/aramsT/esting1": {
@@ -521,5 +542,24 @@
     {
       "url": "http://localhost:2222"
     }
-  ]
+  ],
+  "components": {
+    "securitySchemes": {
+      "x-datadog-trace-id": {
+        "name": "x-datadog-trace-id",
+        "in": "header",
+        "type": "apiKey"
+      },
+      "x-datadog-parent-id": {
+        "name": "x-datadog-parent-id",
+        "in": "header",
+        "type": "apiKey"
+      },
+      "x-datadog-sampling-priority": {
+        "name": "x-datadog-sampling-priority",
+        "in": "header",
+        "type": "apiKey"
+      }
+    }
+  }
 }
