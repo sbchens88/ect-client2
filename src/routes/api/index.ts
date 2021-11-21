@@ -2,6 +2,7 @@ import express, { Router } from 'express';
 import mountRPG from './rpg';
 import mountSQL from './sql';
 import mountAARONTEST3 from './aarontest3';
+import mountCHENTEST11_16 from './chentest11_16';
 
 export default function mountAPI(router: Router) {
     // You can set auth requirements on a whole API section by putting `router.use(requireAuth);` here instead of on individual route definitions
@@ -17,4 +18,8 @@ export default function mountAPI(router: Router) {
     const aarontest3 = Router();
     mountAARONTEST3(aarontest3);
     router.use('/aarontest3', aarontest3);
+
+    const chentest11_16 = Router();
+    mountCHENTEST11_16(chentest11_16);
+    router.use('/chentest11-16', chentest11_16);
 }
