@@ -1,322 +1,575 @@
 {
-    "openapi": "3.0.0",
-    "info": {
-        "title": "eradani-connect-template",
-        "version": "2.5.2",
-        "description": "Specification JSONs: [v2](/api-spec/v2), [v3](/api-spec/v3).\n\nEradani Connect Template Application"
+  "openapi": "3.0.0",
+  "info": {
+    "title": "eradani-connect-template",
+    "version": "2.6.0",
+    "description": "Specification JSONs: [v2](/api-spec/v2), [v3](/api-spec/v3).\n\nEradani Connect Template Application"
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "/",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Up and running!"
+                    }
+                  }
+                }
+              },
+              "text/html": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Up and running!"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "304": {
+            "description": ""
+          }
+        },
+        "tags": [],
+        "security": [
+          {
+            "x-datadog-trace-id": []
+          },
+          {
+            "x-datadog-parent-id": []
+          },
+          {
+            "x-datadog-sampling-priority": []
+          }
+        ]
+      }
     },
-    "paths": {
-        "/": {
-            "get": {
-                "summary": "/",
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "object",
-                                    "properties": {
-                                        "message": {
-                                            "type": "string",
-                                            "example": "Up and running!"
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "304": {
-                        "description": ""
-                    }
-                },
-                "tags": []
+    "/api/rpg/simple-calc/{num}": {
+      "get": {
+        "summary": "/api/rpg/simple-calc/{num}",
+        "parameters": [
+          {
+            "name": "num",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
-        },
-        "/api/rpg/simple-calc/{num}": {
-            "get": {
-                "summary": "/api/rpg/simple-calc/{num}",
-                "parameters": [
-                    {
-                        "name": "num",
-                        "in": "path",
-                        "required": true,
-                        "example": 5,
-                        "schema": {
-                            "type": "integer"
-                        }
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "object",
-                                    "properties": {
-                                        "input": {
-                                            "type": "number",
-                                            "example": 5
-                                        },
-                                        "output": {
-                                            "type": "number",
-                                            "example": 500
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "304": {
-                        "description": ""
-                    },
-                    "400": {
-                        "description": "Bad Request",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "object",
-                                    "properties": {
-                                        "message": {
-                                            "type": "string",
-                                            "example": "Bad Data Supplied to API"
-                                        },
-                                        "errors": {
-                                            "type": "object",
-                                            "properties": {
-                                                "num": {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "value": {
-                                                            "type": "string",
-                                                            "example": "a"
-                                                        },
-                                                        "msg": {
-                                                            "type": "string",
-                                                            "example": "Invalid value"
-                                                        },
-                                                        "param": {
-                                                            "type": "string",
-                                                            "example": "num"
-                                                        },
-                                                        "location": {
-                                                            "type": "string",
-                                                            "example": "params"
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "500": {
-                        "description": "Internal Server Error",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "object",
-                                    "properties": {
-                                        "message": {
-                                            "type": "string",
-                                            "example": "Unknown Error"
-                                        },
-                                        "data": {
-                                            "example": null,
-                                            "nullable": true
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                "tags": []
-            }
-        },
-        "/api/sql/customers": {
-            "get": {
-                "summary": "/api/sql/customers",
-                "parameters": [
-                    {
-                        "name": "minBaldue",
-                        "in": "query",
-                        "example": "100",
-                        "schema": {
-                            "type": "integer"
-                        }
-                    },
-                    {
-                        "name": "maxBaldue",
-                        "in": "query",
-                        "example": "500",
-                        "schema": {
-                            "type": "integer"
-                        }
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "type": "object",
-                                        "properties": {
-                                            "CUSNUM": {
-                                                "type": "number"
-                                            },
-                                            "LSTNAM": {
-                                                "type": "string"
-                                            },
-                                            "INIT": {
-                                                "type": "string"
-                                            },
-                                            "STREET": {
-                                                "type": "string"
-                                            },
-                                            "CITY": {
-                                                "type": "string"
-                                            },
-                                            "STATE": {
-                                                "type": "string"
-                                            },
-                                            "ZIPCOD": {
-                                                "type": "number"
-                                            },
-                                            "CDTLMT": {
-                                                "type": "number"
-                                            },
-                                            "CHGCOD": {
-                                                "type": "number"
-                                            },
-                                            "BALDUE": {
-                                                "type": "number"
-                                            },
-                                            "CDTDUE": {
-                                                "type": "number"
-                                            }
-                                        },
-                                        "required": [
-                                            "CUSNUM",
-                                            "LSTNAM",
-                                            "INIT",
-                                            "STREET",
-                                            "CITY",
-                                            "STATE",
-                                            "ZIPCOD",
-                                            "CDTLMT",
-                                            "CHGCOD",
-                                            "BALDUE",
-                                            "CDTDUE"
-                                        ]
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "304": {
-                        "description": ""
-                    }
-                },
-                "tags": []
-            }
-        },
-        "/auth": {
-            "post": {
-                "summary": "/auth",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "type": "object",
-                                "properties": {
-                                    "username": {
-                                        "type": "string",
-                                        "example": "**PROTECTED FIELD**"
-                                    },
-                                    "password": {
-                                        "type": "string",
-                                        "example": "******"
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "object",
-                                    "properties": {
-                                        "token": {
-                                            "type": "string",
-                                            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzcnByZiIsImlhdCI6MTYyNDY1ODcxNiwiZXhwIjoxNjI0NjYyMzE2fQ.LC5owsV5A5Llh2oNdgYAXYecbZBHoWSvIyAZY8l7JU0"
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                "tags": []
-            }
-        },
-        "/auth/verify-jwt": {
-            "post": {
-                "summary": "/auth/verify-jwt",
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "object",
-                                    "properties": {
-                                        "valid": {
-                                            "type": "boolean",
-                                            "example": true
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "401": {
-                        "description": "Unauthorized"
-                    }
-                },
-                "tags": [],
-                "security": [
-                    {
-                        "authorization": []
-                    }
-                ]
-            }
-        }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
     },
-    "tags": [],
-    "servers": [
-        {
-            "url": "http://localhost:3001"
-        }
-    ],
-    "components": {
-        "securitySchemes": {
-            "authorization": {
-                "name": "authorization",
-                "in": "header",
-                "type": "apiKey"
+    "/api/sql/customers": {
+      "get": {
+        "summary": "/api/sql/customers",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/aarontest3/testtestsql": {
+      "delete": {
+        "summary": "/api/aarontest3/testtestsql",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/chentest11-16/testing13": {
+      "post": {
+        "summary": "/api/chentest11-16/testing13",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/auth": {
+      "post": {
+        "summary": "/auth",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/auth/verify-jwt": {
+      "post": {
+        "summary": "/auth/verify-jwt",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/firstRoute/secondRoute/thirdRoute": {
+      "get": {
+        "summary": "/firstRoute/secondRoute/thirdRoute",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/chenApps/applicationsInApiController/getApplicationsRecordss": {
+      "put": {
+        "summary": "/chenApps/applicationsInApiController/getApplicationsRecordss",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/centerApi/centerRandom": {
+      "put": {
+        "summary": "/centerApi/centerRandom",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/thisIs/aQueryTestin/routingEndpoint": {
+      "patch": {
+        "summary": "/thisIs/aQueryTestin/routingEndpoint",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/coolApi/applicationsManager/getAppByIdTest": {
+      "get": {
+        "summary": "/coolApi/applicationsManager/getAppByIdTest",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/coolestApi/applicationsMgr/deleteAppByIdtestin": {
+      "delete": {
+        "summary": "/coolestApi/applicationsMgr/deleteAppByIdtestin",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/testingAping/testingController/getAppByIdAndLib": {
+      "put": {
+        "summary": "/testingAping/testingController/getAppByIdAndLib",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/chenTesting/theParamFeature/getApplicationByIdKey": {
+      "patch": {
+        "summary": "/chenTesting/theParamFeature/getApplicationByIdKey",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/letsApi/controllerForApi/getUserByUserNameEP": {
+      "put": {
+        "summary": "/letsApi/controllerForApi/getUserByUserNameEP",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/chenAsq/asqController/getDataEndpointaa": {
+      "get": {
+        "summary": "/chenAsq/asqController/getDataEndpointaa",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/chensAPi/chensContrl/chensEpoint": {
+      "get": {
+        "summary": "/chensAPi/chensContrl/chensEpoint",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/justTesting/theApiCon/getSomeThings/{num}": {
+      "get": {
+        "summary": "/justTesting/theApiCon/getSomeThings/{num}",
+        "parameters": [
+          {
+            "name": "num",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
-        }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/chenAp/iTestingA/ndLoad/{appId}": {
+      "get": {
+        "summary": "/chenAp/iTestingA/ndLoad/{appId}",
+        "parameters": [
+          {
+            "name": "appId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/cheApi/theContl/getSompp": {
+      "get": {
+        "summary": "/cheApi/theContl/getSompp",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/yetAnother/apiTestRouting/getSomeRDAt": {
+      "get": {
+        "summary": "/yetAnother/apiTestRouting/getSomeRDAt",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/loaderCheck/letsSeeid/workigloadaer": {
+      "get": {
+        "summary": "/loaderCheck/letsSeeid/workigloadaer",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/asdfd/dssadsd/sdssd1": {
+      "get": {
+        "summary": "/asdfd/dssadsd/sdssd1",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/asdasd/asdaw/ewfsdvcc": {
+      "get": {
+        "summary": "/asdasd/asdaw/ewfsdvcc",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/asdasdasdas/dasdasdasdasd/asdasasdasd1": {
+      "get": {
+        "summary": "/asdasdasdas/dasdasdasdasd/asdasasdasd1",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/asdsad/asdasdawqe/qweqwe2": {
+      "get": {
+        "summary": "/asdsad/asdasdawqe/qweqwe2",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/asdsad/asdasdertygfawqe/qweqwe22": {
+      "get": {
+        "summary": "/asdsad/asdasdertygfawqe/qweqwe22",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/sdfghjkl/lkjhgfds/pkmnhyt": {
+      "get": {
+        "summary": "/sdfghjkl/lkjhgfds/pkmnhyt",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/chen/testingA/getSData": {
+      "get": {
+        "summary": "/chen/testingA/getSData",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/chen/tstin/gvalidators": {
+      "get": {
+        "summary": "/chen/tstin/gvalidators",
+        "responses": {},
+        "tags": [],
+        "x-api-resource": "1.yaml",
+        "x-generated-at": "Sun Nov 21 2021 09:32:20 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
+      }
+    },
+    "/aapi/acontrollera/aendpoindaa": {
+      "get": {
+        "summary": "/aapi/acontrollera/aendpoindaa",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/pm2Rest/artTesting/apiGenratorCall": {
+      "get": {
+        "summary": "/pm2Rest/artTesting/apiGenratorCall",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/badbad/apiRoute/ohNo": {
+      "get": {
+        "summary": "/badbad/apiRoute/ohNo",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/test1/apiasdasd/eradanisdasd": {
+      "get": {
+        "summary": "/test1/apiasdasd/eradanisdasd",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/chillka/chil/getAppsYte": {
+      "patch": {
+        "summary": "/chillka/chil/getAppsYte",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/testingApi/testController/testEndpoint1": {
+      "get": {
+        "summary": "/testingApi/testController/testEndpoint1",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/testing/theNew/featureSwag": {
+      "patch": {
+        "summary": "/testing/theNew/featureSwag",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/testing/theNew/featureSwag123": {
+      "patch": {
+        "summary": "/testing/theNew/featureSwag123",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/testing/theNew/featureSwag12345": {
+      "patch": {
+        "summary": "/testing/theNew/featureSwag12345",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/testing/theNew/featureSwag123456": {
+      "patch": {
+        "summary": "/testing/theNew/featureSwag123456",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/testing/theNew/featureSwag1234567": {
+      "patch": {
+        "summary": "/testing/theNew/featureSwag1234567",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/testing/yamlParam/enpoint": {
+      "get": {
+        "summary": "/testing/yamlParam/enpoint",
+        "parameters": [
+          {
+            "name": "in",
+            "in": "query",
+            "example": "jkj",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "p1",
+            "in": "query",
+            "example": "jkj",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Unknown Error"
+                    },
+                    "data": {
+                      "example": null,
+                      "nullable": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": []
+      }
+    },
+    "/chenApi/asdasdas/dasdasd123": {
+      "patch": {
+        "summary": "/chenApi/asdasdas/dasdasd123",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/asdasda/asdasdsa/dasdaq43423": {
+      "put": {
+        "summary": "/asdasda/asdasdsa/dasdaq43423",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/refvasd/asdasdww/pepejnjvr44": {
+      "delete": {
+        "summary": "/refvasd/asdasdww/pepejnjvr44",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/poikg/yujhsdsa/reepfoj8888": {
+      "delete": {
+        "summary": "/poikg/yujhsdsa/reepfoj8888",
+        "responses": {},
+        "tags": [],
+        "x-api-resource": "query: select * from qgpl.applications",
+        "x-generated-at": 3,
+        "x-generated-by": "username"
+      }
+    },
+    "/vendorE/xtension/testing8": {
+      "post": {
+        "summary": "/vendorE/xtension/testing8",
+        "responses": {},
+        "tags": [],
+        "x-api-resource": "query: select * from qgpl.applications",
+        "x-generated-at": 3,
+        "x-generated-by": "username"
+      }
+    },
+    "/asd/asdwe/asdsdsa8899": {
+      "post": {
+        "summary": "/asd/asdwe/asdsdsa8899",
+        "responses": {},
+        "tags": [],
+        "x-api-resource": "query: select * from qgpl.applications",
+        "x-generated-at": "Wed Nov 03 2021 14:40:15 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
+      }
+    },
+    "/yamlTe/stingWi/thParams": {
+      "get": {
+        "summary": "/yamlTe/stingWi/thParams",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/yamlTe/stingYa/mlTesting": {
+      "get": {
+        "summary": "/yamlTe/stingYa/mlTesting",
+        "responses": {},
+        "tags": [],
+        "x-api-resource": "1.yaml",
+        "x-generated-at": "Wed Nov 10 2021 14:02:46 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
+      }
+    },
+    "/yamlTe/stingYa/mlTesting123": {
+      "get": {
+        "summary": "/yamlTe/stingYa/mlTesting123",
+        "responses": {},
+        "tags": [],
+        "x-api-resource": "1.yaml",
+        "x-generated-at": "Wed Nov 10 2021 14:08:01 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
+      }
+    },
+    "/validat/orsTesting/Yamlep": {
+      "get": {
+        "summary": "/validat/orsTesting/Yamlep",
+        "responses": {},
+        "tags": [],
+        "x-api-resource": "1.yaml",
+        "x-generated-at": "Tue Nov 16 2021 14:33:10 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
+      }
+    },
+    "/ymlTeestin/gWithVa/lidators": {
+      "get": {
+        "summary": "/ymlTeestin/gWithVa/lidators",
+        "responses": {},
+        "tags": [],
+        "x-api-resource": "1.yaml",
+        "x-generated-at": "Tue Nov 16 2021 15:50:16 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
+      }
+    },
+    "/ymlEn/dpoin/tPatch": {
+      "patch": {
+        "summary": "/ymlEn/dpoin/tPatch",
+        "responses": {},
+        "tags": [],
+        "x-api-resource": "1.yaml",
+        "x-generated-at": "Tue Nov 16 2021 17:04:35 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
+      }
+    },
+    "/qwewe/qweqwewq/eqweqwewe": {
+      "get": {
+        "summary": "/qwewe/qweqwewq/eqweqwewe",
+        "responses": {},
+        "tags": [],
+        "x-api-resource": "1.yaml",
+        "x-generated-at": "Tue Nov 16 2021 20:57:25 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
+      }
+    },
+    "/yamlP/aramsT/esting1": {
+      "get": {
+        "summary": "/yamlP/aramsT/esting1",
+        "responses": {},
+        "tags": []
+      }
     }
+  },
+  "tags": [],
+  "servers": [
+    {
+      "url": "http://localhost:2222"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "x-datadog-trace-id": {
+        "name": "x-datadog-trace-id",
+        "in": "header",
+        "type": "apiKey"
+      },
+      "x-datadog-parent-id": {
+        "name": "x-datadog-parent-id",
+        "in": "header",
+        "type": "apiKey"
+      },
+      "x-datadog-sampling-priority": {
+        "name": "x-datadog-sampling-priority",
+        "in": "header",
+        "type": "apiKey"
+      }
+    }
+  }
 }
