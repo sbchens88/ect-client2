@@ -4,6 +4,7 @@ import mountAuth from './auth';
 import respond from 'src/middlewares/respond';
 import mountEDITORQ from './editorQ';
 import mountEDITOR from './editor';
+import mountEDITOR_ from './editor_';
 
 export default function addRoutes(router: Router) {
     const api = express.Router();
@@ -27,4 +28,8 @@ export default function addRoutes(router: Router) {
     const editor = Router();
     mountEDITOR(editor);
     router.use('/editor', editor);
+
+    const editor_ = Router();
+    mountEDITOR_(editor_);
+    router.use('/editor​', editor_);
 }
