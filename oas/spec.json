@@ -120,7 +120,10 @@
         ],
         "parameters": [],
         "responses": {},
-        "tags": []
+        "tags": [],
+        "x-api-resource": "query:select * from qgpl.applications",
+        "x-generated-at": "Thu Dec 09 2021 19:44:35 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
       }
     },
     "/api/chentest11-16/testing13": {
