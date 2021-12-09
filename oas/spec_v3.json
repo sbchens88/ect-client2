@@ -93,16 +93,35 @@
         "tags": []
       }
     },
-    "/api/aarontest3/testtestsql": {
-      "delete": {
-        "summary": "/api/aarontest3/testtestsql",
+    "/editorQ/aingen/dpoint": {
+      "get": {
+        "summary": "/editorQ/aingen/dpoint",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/editor/monaco/testigEndpoint": {
+      "get": {
+        "summary": "/editor/monaco/testigEndpoint",
         "responses": {},
         "tags": []
       }
     },
     "/api/chentest11-16/testing13": {
+      "get": {
+        "summary": "/api/chentest11-16/testing13",
+        "responses": {},
+        "tags": []
+      },
       "post": {
         "summary": "/api/chentest11-16/testing13",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/aarontest3/testtestsql": {
+      "delete": {
+        "summary": "/api/aarontest3/testtestsql",
         "responses": {},
         "tags": []
       }

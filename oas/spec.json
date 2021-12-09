@@ -101,9 +101,20 @@
         "tags": []
       }
     },
-    "/api/aarontest3/testtestsql": {
-      "delete": {
-        "summary": "/api/aarontest3/testtestsql",
+    "/editorQ/aingen/dpoint": {
+      "get": {
+        "summary": "/editorQ/aingen/dpoint",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/editor/monaco/testigEndpoint": {
+      "get": {
+        "summary": "/editor/monaco/testigEndpoint",
         "consumes": [
           "application/json"
         ],
@@ -113,8 +124,28 @@
       }
     },
     "/api/chentest11-16/testing13": {
+      "get": {
+        "summary": "/api/chentest11-16/testing13",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      },
       "post": {
         "summary": "/api/chentest11-16/testing13",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/aarontest3/testtestsql": {
+      "delete": {
+        "summary": "/api/aarontest3/testtestsql",
         "consumes": [
           "application/json"
         ],
