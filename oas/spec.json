@@ -101,6 +101,20 @@
         ],
         "parameters": [],
         "responses": {},
+        "tags": [],
+        "x-api-resource": "query: select * from qgpl.applications",
+        "x-generated-at": "Thu Dec 09 2021 20:16:00 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
+      }
+    },
+    "/api/monacoeditor/endasd": {
+      "get": {
+        "summary": "/api/monacoeditor/endasd",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
         "tags": []
       }
     },
