@@ -154,6 +154,20 @@
         ],
         "parameters": [],
         "responses": {},
+        "tags": [],
+        "x-api-resource": "query: select * from qgpl.applications",
+        "x-generated-at": "Sun Dec 12 2021 10:28:25 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
+      }
+    },
+    "/api/monacoEd/itorTest": {
+      "get": {
+        "summary": "/api/monacoEd/itorTest",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
         "tags": []
       }
     },
