@@ -19,4 +19,9 @@ export default function mountMONACO(router: Router) {
         validate(validators.Ewqqwey),
         respond((req: any) => monacoController.Ewqqwey(Object.assign({}, req.params, req.body, req.query)))
     );
+    router.get(
+        '/apieditor',
+        validate(validators.EditorApi),
+        respond((req: any) => monacoController.EditorApi(Object.assign({}, req.params, req.body, req.query)))
+    );
 }

@@ -20,3 +20,8 @@ export const EwqqweyMain = new eradaniConnect.run.Sql(` select * from qgpl.appli
 export interface EwqqweyInput {}
 export type EwqqweyOutputRecord = JSONObject;
 export interface EwqqweyOutput extends Array<EwqqweyOutputRecord> {}
+
+export const EditorApiMain = new eradaniConnect.run.Sql(` select * from qgpl.applications`);
+export interface EditorApiInput {}
+export type EditorApiOutputRecord = JSONObject;
+export interface EditorApiOutput extends Array<EditorApiOutputRecord> {}

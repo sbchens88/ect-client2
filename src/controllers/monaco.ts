@@ -13,7 +13,10 @@ import {
     QweqweInput,
     EwqqweyMain,
     EwqqweyOutput,
-    EwqqweyInput
+    EwqqweyInput,
+    EditorApiMain,
+    EditorApiOutput,
+    EditorApiInput
 } from 'src/models/monaco';
 
 const logger = createLogger('controllers/monaco');
@@ -40,4 +43,10 @@ export async function Ewqqwey(inputs: JSONObject): Promise<EwqqweyOutput> {
     logger.debug('Calling ewqqwey with args: ', inputs);
     const params: EwqqweyInput = {};
     return transport.execute(EwqqweyMain, params) as Promise<EwqqweyOutput>;
+}
+
+export async function EditorApi(inputs: JSONObject): Promise<EditorApiOutput> {
+    logger.debug('Calling editorApi with args: ', inputs);
+    const params: EditorApiInput = {};
+    return transport.execute(EditorApiMain, params) as Promise<EditorApiOutput>;
 }
