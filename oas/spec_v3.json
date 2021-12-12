@@ -173,6 +173,23 @@
         "tags": []
       }
     },
+    "/api/testing/withParams/{id}": {
+      "get": {
+        "summary": "/api/testing/withParams/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/auth": {
       "post": {
         "summary": "/auth",

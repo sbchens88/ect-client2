@@ -18,3 +18,15 @@ export interface TheParamInputFunction123Input {
 }
 export type TheParamInputFunction123OutputRecord = JSONObject;
 export interface TheParamInputFunction123Output extends Array<TheParamInputFunction123OutputRecord> {}
+
+export const TheParamInputFunction1234Main = new eradaniConnect.run.Sql(
+    ` select * from qgpl.application where id = ?`,
+    {
+        params: [{ name: 'id' }]
+    }
+);
+export interface TheParamInputFunction1234Input {
+    id: number;
+}
+export type TheParamInputFunction1234OutputRecord = JSONObject;
+export interface TheParamInputFunction1234Output extends Array<TheParamInputFunction1234OutputRecord> {}

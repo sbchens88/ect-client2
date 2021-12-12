@@ -205,6 +205,23 @@
         "tags": []
       }
     },
+    "/api/testing/withParams/{id}": {
+      "get": {
+        "summary": "/api/testing/withParams/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/auth": {
       "post": {
         "summary": "/auth",
