@@ -5,4 +5,10 @@ export const TheParamInputFunction: InputCheckChain[] = [
                 ,
                     check('id').isNumeric()
                 ]
+export const TheParamInputFunction123: InputCheckChain[] = [
+                    check('id')
+                ,
+                    check('id').isNumeric()
+                ]
+
 

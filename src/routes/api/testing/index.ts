@@ -11,4 +11,11 @@ export default function mountTESTING(router: Router) {
             testingController.TheParamInputFunction(Object.assign({}, req.params, req.body, req.query))
         )
     );
+    router.get(
+        '/withParam/:id',
+        validate(validators.TheParamInputFunction123),
+        respond((req: any) =>
+            testingController.TheParamInputFunction123(Object.assign({}, req.params, req.body, req.query))
+        )
+    );
 }
