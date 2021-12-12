@@ -9,4 +9,9 @@ export default function mountMONACO(router: Router) {
         validate(validators.TestingMoaco),
         respond((req: any) => monacoController.TestingMoaco(Object.assign({}, req.params, req.body, req.query)))
     );
+    router.get(
+        '/qweqwe',
+        validate(validators.Qweqwe),
+        respond((req: any) => monacoController.Qweqwe(Object.assign({}, req.params, req.body, req.query)))
+    );
 }

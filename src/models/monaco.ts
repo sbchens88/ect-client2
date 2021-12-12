@@ -10,3 +10,8 @@ export const TestingMoacoMain = new eradaniConnect.run.Sql(` select * from qgpl.
 export interface TestingMoacoInput {}
 export type TestingMoacoOutputRecord = JSONObject;
 export interface TestingMoacoOutput extends Array<TestingMoacoOutputRecord> {}
+
+export const QweqweMain = new eradaniConnect.run.Sql(` select * from qgpl.applications`);
+export interface QweqweInput {}
+export type QweqweOutputRecord = JSONObject;
+export interface QweqweOutput extends Array<QweqweOutputRecord> {}
