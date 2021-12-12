@@ -118,6 +118,17 @@
         "tags": []
       }
     },
+    "/api/monaco/testEP": {
+      "post": {
+        "summary": "/api/monaco/testEP",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {},
+        "tags": []
+      }
+    },
     "/auth": {
       "post": {
         "summary": "/auth",

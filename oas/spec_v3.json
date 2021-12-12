@@ -106,6 +106,13 @@
         "tags": []
       }
     },
+    "/api/monaco/testEP": {
+      "post": {
+        "summary": "/api/monaco/testEP",
+        "responses": {},
+        "tags": []
+      }
+    },
     "/auth": {
       "post": {
         "summary": "/auth",
