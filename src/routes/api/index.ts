@@ -6,6 +6,7 @@ import mountMONACO2 from './monaco2';
 import mountMONACOEDITOR from './monacoeditor';
 import mountMONACO from './monaco';
 import mountMONACOED from './monacoEd';
+import mountTESTING from './testing';
 
 export default function mountAPI(router: Router) {
     // You can set auth requirements on a whole API section by putting `router.use(requireAuth);` here instead of on individual route definitions
@@ -37,4 +38,8 @@ export default function mountAPI(router: Router) {
     const monacoEd = Router();
     mountMONACOED(monacoEd);
     router.use('/monacoEd', monacoEd);
+
+    const testing = Router();
+    mountTESTING(testing);
+    router.use('/testing', testing);
 }
