@@ -10,7 +10,10 @@ import {
     TestingMoacoInput,
     QweqweMain,
     QweqweOutput,
-    QweqweInput
+    QweqweInput,
+    EwqqweyMain,
+    EwqqweyOutput,
+    EwqqweyInput
 } from 'src/models/monaco';
 
 const logger = createLogger('controllers/monaco');
@@ -31,4 +34,10 @@ export async function Qweqwe(inputs: JSONObject): Promise<QweqweOutput> {
     logger.debug('Calling qweqwe with args: ', inputs);
     const params: QweqweInput = {};
     return transport.execute(QweqweMain, params) as Promise<QweqweOutput>;
+}
+
+export async function Ewqqwey(inputs: JSONObject): Promise<EwqqweyOutput> {
+    logger.debug('Calling ewqqwey with args: ', inputs);
+    const params: EwqqweyInput = {};
+    return transport.execute(EwqqweyMain, params) as Promise<EwqqweyOutput>;
 }

@@ -120,6 +120,16 @@
       "get": {
         "summary": "/api/monaco/qweqwe",
         "responses": {},
+        "tags": [],
+        "x-api-resource": "query: select * from qgpl.applications",
+        "x-generated-at": "Sun Dec 12 2021 09:15:16 GMT+0000 (Coordinated Universal Time)",
+        "x-generated-by": "ecapitst"
+      }
+    },
+    "/api/monaco/qwe": {
+      "get": {
+        "summary": "/api/monaco/qwe",
+        "responses": {},
         "tags": []
       }
     },
